@@ -1,0 +1,570 @@
+/*
+* Theme Name: BusinessPerfect
+* Theme URI: businessperfect.com
+* Author: Milan Savov
+* Author URI/Mail: milan.savov@gmail.com
+* Version: 1.0
+* */
+
+/* COLORS
+*/
+
+/* CUSTOM RESETS
+================================================== */
+a {
+  color: #ffd500;
+}
+
+a:focus,
+a:hover {
+  color: #3B3A36;
+}
+
+/* 
+ * Buttons 
+ */
+.btn {
+  color: #292a2c;
+}
+
+.btn-yellow {
+  background-color: #ffd500; 
+  color: #fff;
+}
+
+.btn-transparent {
+  border:1px solid #e6e6e8;
+  background: transparent;
+}
+
+.btn-yellow-transparent {
+  color: #de614b;
+  border: 1px solid #de614b;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #d5d5d5;
+}
+
+.btn-yellow-border {
+  border: 1px solid #ffd500;
+}
+
+.btn.btn-yellow-border:hover,
+.btn.btn-yellow-border:focus {
+  background-color: #ffd500; 
+  color: #fff; 
+}
+
+.btn-gray-border {
+  border: 1px solid #d5d5d5;
+}
+
+.btn.btn-gray-border:hover,
+.btn.btn-gray-border:focus {
+  background-color: #d5d5d5;  
+}
+
+/* 
+ * Forms 
+ */
+
+ /* Input fields */
+.form-control {
+  background-color: #f9f8f8;
+  border: 1px solid #f9f8f8;
+}
+
+.form-control:focus{
+  border-color: #ffd500;
+}
+
+input[type=search] + button:hover,
+input[type=search] + button:focus {
+  color: #ffd500;
+}
+
+/* Checkbox fields */
+.checkbox [type="checkbox"]:not(:checked) + label:before,
+.checkbox [type="checkbox"]:checked + label:before {
+  background-color: #f9f8f8;
+  border: 1px solid #f9f8f8;
+}
+
+.checkbox [type="checkbox"]:not(:checked) + label:after,
+.checkbox [type="checkbox"]:checked + label:after {
+  color: #ffd500;;
+}
+
+.checkbox [type="checkbox"]:checked:focus + label:before,
+.checkbox [type="checkbox"]:not(:checked):focus + label:before {
+  border: 1px dotted #ffd500;
+}
+
+.checkbox [type="checkbox"]:not(:checked) + label:hover:before,
+.checkbox [type="checkbox"]:checked + label:hover:before {
+  border: 1px solid #ffd500;
+}
+
+/* Radiobutton fields */
+.radio-btn [type="radio"]:not(:checked) + label:before,
+.radio-btn [type="radio"]:checked + label:before {
+  background-color: #f9f8f8;
+  border: 1px solid #f9f8f8;
+}
+
+.radio-btn [type="radio"]:not(:checked) + label:after,
+.radio-btn [type="radio"]:checked + label:after {
+  background-color: #ffd500;
+}
+
+.radio-btn [type="radio"]:checked:focus + label:before,
+.radio-btn [type="radio"]:not(:checked):focus + label:before {
+  border: 1px dotted #ffd500;
+}
+
+.radio-btn [type="radio"]:checked + label:hover:before,
+.radio-btn [type="radio"]:not(:checked) + label:hover:before {
+  border: 1px solid #ffd500;
+}
+
+/* Selectpicker */
+.selectpicker-styled {
+  background-color: #f9f8f8;
+  border: 1px solid #f9f8f8;
+}
+
+.selectpicker-styled:hover,
+.selectpicker-styled:active, 
+.selectpicker-styled.active {
+  border-color: #ffd500;
+}
+
+.selectpicker-options {
+  background-color: #f9f8f8;
+}
+
+.selectpicker-options li {
+  border: 1px solid #ffd500;
+  border-top: 0; 
+}
+
+.selectpicker-options li:hover {
+  color: #ffd500;
+  border-color: #ffd500;
+}
+
+
+/* ELEMENTS
+================================================== */
+/* Tabs */
+.tab-style + .tab-content {
+  background-color: #f9f8f8;
+}
+
+.nav-tabs.tab-style > li.active > a {
+  background-color: #ffd500;
+  border: 1px solid #ffd500;
+}
+
+.nav-tabs.tab-style > li > a {
+  color: #333333;
+  background-color: #f9f8f8;
+  border: 1px solid #f9f8f8;
+}
+
+.nav-tabs.tab-style > li > a:hover {
+  border-color: #ffd500;
+}
+
+/* Accordion */
+.accordion .panel-heading a {
+  color: #333;
+}
+
+.accordion .panel-heading {
+  background-color: transparent;
+}
+
+.accordion .panel-heading a.collapsed {
+  background-color: #f9f8f8;
+}
+
+.accordion .panel-heading a.collapsed:hover,
+.accordion.accordion-gray .panel-heading a.collapsed:hover{
+  background-color: #ffd500;   
+}
+
+.accordion .panel-heading a {
+  background-color: #ffd500;
+}
+
+.accordion .panel-group .panel-heading + .panel-collapse > .panel-body,
+.accordion .panel-default > .panel-heading + .panel-collapse > .panel-body {
+  background-color: #f9f8f8;
+}
+
+/* Accordion-gray */
+.accordion.accordion-gray  .panel-heading a {
+  color: #fff;
+}
+
+.accordion.accordion-gray .panel-heading a.collapsed {
+  background-color: #3B3A36;
+}
+
+/* LAYOUT
+================================================== */
+/* Background colors */
+.gray-bg {
+  background-color: #333;
+}
+
+.yellow-bg {
+  background-color: #ffd500;  
+}
+
+.black-bg {
+  background-color: #000;
+}
+
+.light-gray-bg {
+  background-color: #f9f8f8;
+}
+
+.transparent-bg {
+  background: transparent;
+}
+
+a.white-text:hover {
+  color: #333; 
+} 
+
+/* Text colors */
+.gray-text {
+  color: #333;
+}
+
+.yellow-text {
+  color: #ffd500;  
+}
+
+.breadcrumb li a {
+  color: #777e88;
+}
+
+.breadcrumb .active {
+  color: #ffd500;
+}
+
+/* Pagination */
+.pagination > li > a {
+  color: #292a2c;
+  background-color: #f9f8f8;
+}
+
+.pagination > li.active > a,
+.pagination > li > a:hover,
+.pagination > li.active > a:hover {
+  background-color: #ffd500;
+  color: #fff;
+}
+
+/* HEADER
+================================================== */
+.site-header {
+  background-color: rgba(59,58,54,0);
+  border-bottom: 1px solid rgba(226,226,226,0);
+}
+
+.site-header-fill {
+  background-color: rgba(59,58,54,1);    
+  border-bottom: 1px solid rgba(226,226,226,1);
+}
+
+/* Site-logo */
+.site-title a:hover {
+  color: #fff;
+}
+
+.site-title.yellow-text:hover  {
+  color: #ffd500;   
+}
+
+/* Navigation */
+.navbar-nav > li > a:hover,
+.navbar-nav > li.active > a,
+.navbar-collapse li a:hover,
+.dropdown.open > a, 
+.dropdown-menu a:hover, 
+.dropdown:hover > a, 
+.dropdown-menu>li>a:focus,
+.dropdown-menu li a:hover,
+.slicknav_nav li.active > a,
+.slicknav_nav .dropdown.active > a a,
+.slicknav_nav .active .active a {
+  color: #ffd500;  
+}
+
+.slicknav_nav > li > a .slicknav_arrow {
+  color: #fff;
+}
+
+.dropdown-menu li.active a,
+.dropdown-menu li.active a:hover {
+  background-color: transparent;
+  color: #ffd500;    
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus,
+.nav .open > a, 
+.nav .open > a:focus, 
+.nav .open > a:hover,
+.navbar-collapse li a:hover, 
+.dropdown-menu a:hover, 
+.dropdown:hover > a, 
+.dropdown-menu>li>a:focus,
+.dropdown-menu li a:hover  {
+  background-color: transparent;
+}
+
+.dropdown-menu {
+  border-top: 5px solid #ffd500; 
+}
+
+/* HERO
+================================================== */
+.hero-text {
+  color: #fff;
+}
+
+.hero-arrow a {
+  color: #fff;
+}
+
+.hero-arrow a:hover {
+  color: #ffd500; 
+}
+
+/* SITEMAIN
+================================================== */
+/* Section: Works */
+.multi-item-controls .carousel-control i {
+  color: #000;
+}
+
+/* Section: Service */
+.service-icon {
+  background-color: #f9f8f8;
+}
+
+.service-icon .fa {
+  color: #ffd500;
+}
+
+/* Section: Counter */
+.counter-line:after{
+  background-color: #4a4a4a;
+}
+
+/* Section: Team */
+
+.team-member-position {
+  color: #ffd500; 
+}
+
+.team-member-text {
+  color: #777e88;
+}
+
+.social-links a {
+  border: 1px solid #eeeeee;
+}
+
+.section-team .carousel-control,
+.section-portfolio-item .carousel-control {
+  border: 1px solid #e6e6e8;
+}
+
+/* Section: Clients */
+
+.testimonial {
+  background-color: #fff;
+}
+
+.slick-dots li button {
+  background-color: #fff;
+}
+
+.slick-dots li.slick-active button,
+.slick-dots li:not(.slick-active):hover button  {
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+
+.light-gray-bg .slick-dots li button {
+  background-color: #3B3A36;
+}
+
+.light-gray-bg .slick-dots li.slick-active button,
+.light-gray-bg .slick-dots li:not(.slick-active):hover button {
+  border: 1px solid #3B3A36;
+  background-color: transparent;
+}
+
+/* Section: Social networks */ 
+.social-networks a:hover {
+  color: #fff;
+}
+
+/* PAGES
+================================================== */
+
+/*
+ * PORTFOLIO
+ */
+.portfolio-sorting .active,
+.portfolio-sorting .btn:active {
+  background-color: #ffd500; 
+  border-color: #ffd500; 
+  color: #fff;
+}
+
+.portfolio-link:hover .portfolio-info::before {
+  background: #ffffff;
+}
+
+.portfolio-link h2 {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-link p {
+  color: #000;
+  background: #ffffff;
+}
+
+/*
+ * BLOG
+ */
+.post-title {
+  color: #333;
+}
+
+a.post-title:hover,
+.blog-post > a:hover + .post-content .post-title {
+  color: #ffd500;
+}
+
+.post-meta li + li:before {
+  background-color: #777e88;
+}
+
+.post-meta li a {
+  color: #333;
+}
+
+.post-meta li a:hover {
+  color: #ffd500;;
+} 
+
+/* 
+ * Sidebar
+ */
+.widget-categories li a {
+  color: #777e88;
+}
+
+.widget-categories li a:hover {
+  color: #ffd500;
+}
+
+/* Latest-posts */
+.posts-list li a:hover .widget-post-title {
+  color: #ffd500;
+}
+
+.widget-post-title {
+  color: #333;
+}
+
+.widget-post-date {
+  color: #333;
+}
+
+/* Tags */ 
+.widget-tags ul li a {
+  background-color: #f9f8f8;
+  color: #292a2c;
+}
+
+.widget-tags ul li a:hover {
+  background-color: #ffd500;
+  color: #fff;
+}
+
+/*
+ * BLOG POST
+ */
+
+/* Section: Blog post */
+
+.post-information-content,
+.post-comment-content {
+  padding-left: 95px;
+  padding-top: 5px;
+}
+
+.post-author-name,
+.post-comment-author-name {
+  color: #000;
+}
+
+.post-author-position {
+  color: #777e88;
+}
+
+/* FOOTER
+================================================== */
+.site-footer .site-title span {
+  color: #333;
+}
+
+.site-footer .list-unstyled li a {
+  color: #333;
+}
+
+/* copyright */
+.copyright {
+  border-top: 2px solid #f9f8f8;
+}
+
+.copyright .yellow-text:hover {
+  color: #ffd500;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) { 
+  .nav-tabs {
+    background-color: #eaeaea;
+    border-bottom: none!important;
+  }
+
+  .nav-tabs.tab-style > li > a {
+    border-bottom-color: #f9f8f8;
+  }
+
+  .nav-tabs.tab-style > li > a:hover {
+    border-bottom-color: #ffd500;   
+  }
+
+  .slicknav_nav > li a {
+    color: #fff;
+  }
+
+  .dropdown-menu {
+    border: 0;
+  }
+}
