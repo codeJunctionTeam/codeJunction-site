@@ -12,7 +12,7 @@
     "url": "git+https://github.com/Purushothh/CodeJunction.git"
   },
   "engines": {
-    "node": "10.16.3"
+    "node": "10.x"
   },
   "keywords": [
     "codeJunction"
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/Purushothh/CodeJunction/issues"
   },
-  "homepage": "https://github.com/Purushothh/CodeJunction#readme"
+  "homepage": "https://github.com/Purushothh/CodeJunction#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
