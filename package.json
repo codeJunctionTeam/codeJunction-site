@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nandulaperera/CodeJunction.git"
+    "url": "git+https://github.com/Purushothh/CodeJunction.git"
   },
   "keywords": [
     "codeJunction"
@@ -17,7 +17,7 @@
   "author": "codeJunction",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nandulaperera/CodeJunction/issues"
+    "url": "https://github.com/Purushothh/CodeJunction/issues"
   },
-  "homepage": "https://github.com/nandulaperera/CodeJunction#readme"
+  "homepage": "https://github.com/Purushothh/CodeJunction#readme"
 }
