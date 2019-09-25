@@ -1,0 +1,23 @@
+{
+  "name": "codejunction",
+  "version": "1.0.0",
+  "description": "Official Website of codeJunction",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nandulaperera/CodeJunction.git"
+  },
+  "keywords": [
+    "codeJunction"
+  ],
+  "author": "codeJunction",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nandulaperera/CodeJunction/issues"
+  },
+  "homepage": "https://github.com/nandulaperera/CodeJunction#readme"
+}
