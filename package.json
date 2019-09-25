@@ -1,7 +1,7 @@
 {
-  "name": "codejunction",
+  "name": "codeJunction",
   "version": "1.0.0",
-  "description": "Official Website of codeJunction",
+  "description": "Source code of Official Website of codeJunction",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,6 +10,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Purushothh/CodeJunction.git"
+  },
+  "engines": {
+    "node": "10.16.3"
   },
   "keywords": [
     "codeJunction"
