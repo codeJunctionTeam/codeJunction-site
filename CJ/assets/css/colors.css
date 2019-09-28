@@ -225,6 +225,10 @@ input[type=search] + button:focus {
   background-color: #ffd500;  
 }
 
+.orange-bg {
+  background-color: #de614b
+}
+
 .black-bg {
   background-color: #000;
 }
@@ -248,6 +252,10 @@ a.white-text:hover {
 
 .yellow-text {
   color: #ffd500;  
+}
+
+.orange-text{
+  color: #de614b
 }
 
 .breadcrumb li a {

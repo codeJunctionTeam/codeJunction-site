@@ -1297,7 +1297,7 @@ display: none;
 }
 
 .team-member-position {
-  color: #ffd500; 
+  color: #de614b; 
   font-style: italic;
 }
 
@@ -1339,7 +1339,7 @@ display: none;
 }
 
 .testimonial-content {
-  min-height: 134px;
+  min-height: 150px;
   padding: 10px 0 25px 170px;
   position: relative;
 }
