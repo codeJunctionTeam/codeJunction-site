@@ -1340,6 +1340,7 @@ display: none;
 
 .testimonial-content {
   min-height: 250px;
+  min-width: 600px;
   padding: 10px 0 25px 170px;
   position: relative;
 }
