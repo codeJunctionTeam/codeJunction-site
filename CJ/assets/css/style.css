@@ -1013,7 +1013,7 @@ blockquote {
   width: 100%;
   display: table;
   position: relative;
-  background-size: cover;
+  background-size: auto;
 }
 
 .hero-max-720 {
