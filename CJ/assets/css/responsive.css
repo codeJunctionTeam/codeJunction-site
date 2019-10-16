@@ -795,6 +795,15 @@
 		max-width: 390px;
 	}
 
+	.hero {
+		background: url(../img/logoSmall.jpg) center no-repeat;
+		height: 100%;
+		width: 100%;
+		display: table;
+		position: relative;
+		background-size: cover;
+	}
+
 	/* SITE-MAIN
 	================================================== */
 	/* Section: works */ 
