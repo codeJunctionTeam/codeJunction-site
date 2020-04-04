@@ -1,0 +1,29 @@
+{
+  "name": "codeJunction",
+  "version": "1.0.0",
+  "description": "Source code of Official Website of codeJunction",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Purushothh/CodeJunction.git"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "keywords": [
+    "codeJunction"
+  ],
+  "author": "codeJunction",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Purushothh/CodeJunction/issues"
+  },
+  "homepage": "https://github.com/Purushothh/CodeJunction#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
