@@ -22,11 +22,11 @@
         height: 400px;
         overflow-y: scroll;
     }
-    .navbar .navbar-collapse.collapse,
+    /* .navbar .navbar-collapse.collapse,
     .navbar .navbar-collapse.collapse.in,
     .navbar .navbar-collapse.collapsing{
         // display: none !important;
-    }
+    } */
     .demo-header .motto{
         padding-top: 30% !important;
     }
@@ -166,6 +166,7 @@
         display: none;
     }
     .navbar-fixed-top {
+        backface-visibility: hidden;
         -webkit-backface-visibility: hidden;
     }
 
@@ -188,6 +189,16 @@
         .footer-nav,
         .credits{
             margin: 0 auto;
+        }
+
+        .meta-links>ul{
+            list-style: none;
+            text-align: left;
+            padding: 0px;
+        }
+
+        .meta-links .meta-link{
+            text-align: center;
         }
     }
     .section-buttons{
