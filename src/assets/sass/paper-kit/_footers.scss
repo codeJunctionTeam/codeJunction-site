@@ -44,7 +44,9 @@
     margin-bottom: 0px !important;
 }
 
-.footer .copyright, .footer .contact, .footer .social-icons {
+.footer .copyright, 
+.footer .contact, 
+.footer .social-icons {
   color: #ffffff !important;
   padding: 10px 0px;
   font-size: 14px;
@@ -53,7 +55,7 @@
   text-align: center;
 }
 
-.footer .credits .footer-title{
+.footer .footer-title{
     color: #ffffff;
     line-height: 20px;
     font-weight: bold;
@@ -61,12 +63,12 @@
     margin-top: 20px;
 }
 
-.footer .credits .social-icon .fa{
+.footer .social-icon .fa{
     color: #ffffff;
     font-size: x-large;
 }
 
-.footer .meta-links .meta-link>a{
+.footer .meta-link>a{
     color: #ffffff;
 }
 
