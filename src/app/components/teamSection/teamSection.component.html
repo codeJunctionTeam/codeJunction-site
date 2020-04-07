@@ -1,0 +1,25 @@
+<div class="section">
+    <div class="section section-dark">
+        <div class="container">
+            <div class="col-md-auto">
+                <h2 class="title">Team Members</h2>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div *ngFor="let teamMember of teamMembers">
+                    <div class="col-sm-auto">
+                        <div class="hover-profile-card">
+                            <img src="assets/img/faces/{{teamMember.image}}"
+                                 class="rounded-circle img-center img-fluid shadow shadow-lg--hover imgHover">
+                            <h5 class="title" style="text-align: center;">
+                                <div class="firstName">{{teamMember.firstName}}</div>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
