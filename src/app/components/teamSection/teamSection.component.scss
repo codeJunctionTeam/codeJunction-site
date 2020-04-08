@@ -1,0 +1,20 @@
+.hover-profile-card {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.hover-profile-card .imgHover {
+    width: 150px;
+}
+
+.hover-profile-card:hover .imgHover {
+    opacity: 0.3;
+}
+
+.hover-profile-card:hover .imgIcon {
+    opacity: 1;
+}
