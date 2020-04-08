@@ -91,16 +91,16 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/typography/typography.component.html":
-/*!*******************************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/typography/typography.component.html ***!
-  \*******************************************************************************************************/
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/teamSection/teamSection.component.html":
+/*!*********************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/teamSection/teamSection.component.html ***!
+  \*********************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"section\">\n    <div class=\"container tim-container\">\n        <div class=\"tim-title\">\n            <h3>Typography</h3>\n            <br/>\n        </div>\n        <div id=\"typography\">\n            <div class=\"row\">\n                <div class=\"typography-line\">\n                    <h1>\n                        <span class=\"note\">Header 1</span> Thinking in textures\n                    </h1>\n                </div>\n                <div class=\"typography-line\">\n                    <h2>\n                        <span class=\"note\">Header 2</span> Thinking in textures\n                    </h2>\n                </div>\n                <div class=\"typography-line\">\n                    <h3>\n                        <span class=\"note\">Header 3</span> Thinking in textures\n                    </h3>\n                </div>\n                <div class=\"typography-line\">\n                    <h4>\n                        <span class=\"note\">Header 4</span> Thinking in textures\n                    </h4>\n                </div>\n                <div class=\"typography-line\">\n                    <h5>\n                        <span class=\"note\">Header 5</span> Thinking in textures\n                    </h5>\n                </div>\n                <div class=\"typography-line\">\n                    <h6>\n                        <span class=\"note\">Header 6</span> Thinking in textures\n                    </h6>\n                </div>\n                <div class=\"typography-line\">\n                    <p>\n                        <span class=\"note\">Paragraph</span> Thinking in textures\n                    </p>\n                </div>\n                <div class=\"typography-line\">\n                    <span class=\"note\">Quote</span>\n                    <blockquote class=\"blockquote\">\n                        <p class=\"mb-0\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>\n                        <footer class=\"blockquote-footer\">Someone famous in <cite title=\"source Title\">Source Title</cite></footer>\n                    </blockquote>\n                </div>\n                <div class=\"typography-line\">\n                    <span class=\"note\">Muted text</span>\n                    <p class=\"text-muted\">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>\n                </div>\n                <div class=\"typography-line\">\n                    <span class=\"note\">Primary text</span>\n                    <p class=\"text-primary\">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>\n                </div>\n                <div class=\"typography-line\">\n                    <span class=\"note\">Success text</span>\n                    <p class=\"text-success\">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>\n                </div>\n                <div class=\"typography-line\">\n                    <span class=\"note\">Info text</span>\n                    <p class=\"text-info\">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>\n                </div>\n                <div class=\"typography-line\">\n                    <span class=\"note\">Warning text</span>\n                    <p class=\"text-warning\">Etiam porta sem malesuada magna mollis euismod.</p>\n                </div>\n                <div class=\"typography-line\">\n                    <span class=\"note\">Danger text</span>\n                    <p class=\"text-danger\">Donec ullamcorper nulla non metus auctor fringilla.</p>\n                </div>\n                <div class=\"typography-line\">\n                    <h2><span class=\"note\">Small tag</span>Header with small subtitle\n                        <br/>\n                        <small>\".small\" is a tag for the headers</small>\n                    </h2>\n                </div>\n            </div>\n        </div>\n        <br/>\n        <div id=\"images\">\n            <div class=\"container\">\n                <div class=\"tim-title\">\n                    <h3>Images</h3>\n                </div>\n                <div class=\"row\">\n                    <div class=\"col-xs-8 col-sm-6 col-md-3\">\n                        <h4 class=\"images-title\">Rounded Image</h4>\n                        <img src=\"assets/img/uriel-soberanes.jpg\" class=\"img-rounded img-responsive\" alt=\"Rounded Image\">\n                        <div class=\"img-details\">\n                            <div class=\"author\">\n                                <img src=\"assets/img/faces/clem-onojeghuo-2.jpg\" alt=\"Circle Image\" class=\"img-circle img-no-padding img-responsive\">\n                            </div>\n                            <p>Chet Faker</p>\n                        </div>\n                    </div>\n                    <div class=\"col-xs-6  col-sm-3 col-md-2 offset-md-1\">\n                        <h4 class=\"images-title\">Circle Image</h4>\n                        <img src=\"assets/img/faces/joe-gardner-2.jpg\" class=\"img-circle img-no-padding img-responsive\" alt=\"Rounded Image\">\n                        <p class=\"text-center\">Joe Gardner</p>\n                    </div>\n                    <div class=\"col-xs-6  col-sm-3 col-md-2 offset-md-1\">\n                        <h4 class=\"images-title\">Thumbnail</h4>\n                        <img src=\"assets/img/faces/clem-onojeghuo-3.jpg\" class=\"img-thumbnail img-responsive\" alt=\"Rounded Image\">\n                        <p class=\"text-center\">Erik Faker</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"section\">\n    <div class=\"section section-dark\">\n        <div class=\"container\">\n            <div class=\"col-md-auto\">\n                <h2 class=\"title\">Team Members</h2>\n            </div>\n        </div>\n        <br>\n        <div class=\"container\">\n            <div class=\"row justify-content-center\">\n                <div *ngFor=\"let teamMember of teamMembers\">\n                    <div class=\"col-sm-auto\">\n                        <div class=\"hover-profile-card\">\n                            <img src=\"assets/img/faces/{{teamMember.image}}\"\n                                 class=\"rounded-circle img-center img-fluid shadow shadow-lg--hover imgHover\">\n                            <h5 class=\"title\" style=\"text-align: center;\">\n                                <div class=\"firstName\">{{teamMember.firstName}}</div>\n                            </h5>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n");
 
 /***/ }),
 
@@ -608,7 +608,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm5/router.js");
 /* harmony import */ var _basicelements_basicelements_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./basicelements/basicelements.component */ "./src/app/components/basicelements/basicelements.component.ts");
 /* harmony import */ var _navigation_navigation_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./navigation/navigation.component */ "./src/app/components/navigation/navigation.component.ts");
-/* harmony import */ var _typography_typography_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./typography/typography.component */ "./src/app/components/typography/typography.component.ts");
+/* harmony import */ var _teamSection_teamSection_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./teamSection/teamSection.component */ "./src/app/components/teamSection/teamSection.component.ts");
 /* harmony import */ var _nucleoicons_nucleoicons_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./nucleoicons/nucleoicons.component */ "./src/app/components/nucleoicons/nucleoicons.component.ts");
 /* harmony import */ var _components_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components.component */ "./src/app/components/components.component.ts");
 /* harmony import */ var _notification_notification_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./notification/notification.component */ "./src/app/components/notification/notification.component.ts");
@@ -654,7 +654,7 @@ var ComponentsModule = /** @class */ (function () {
                 _components_component__WEBPACK_IMPORTED_MODULE_11__["ComponentsComponent"],
                 _basicelements_basicelements_component__WEBPACK_IMPORTED_MODULE_7__["BasicelementsComponent"],
                 _navigation_navigation_component__WEBPACK_IMPORTED_MODULE_8__["NavigationComponent"],
-                _typography_typography_component__WEBPACK_IMPORTED_MODULE_9__["TypographyComponent"],
+                _teamSection_teamSection_component__WEBPACK_IMPORTED_MODULE_9__["TeamSectionComponent"],
                 _nucleoicons_nucleoicons_component__WEBPACK_IMPORTED_MODULE_10__["NucleoiconsComponent"],
                 _notification_notification_component__WEBPACK_IMPORTED_MODULE_12__["NotificationComponent"],
                 _modal_modal_component__WEBPACK_IMPORTED_MODULE_13__["NgbdModalComponent"],
@@ -953,30 +953,32 @@ var NucleoiconsComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/components/typography/typography.component.scss":
-/*!*****************************************************************!*\
-  !*** ./src/app/components/typography/typography.component.scss ***!
-  \*****************************************************************/
+/***/ "./src/app/components/teamSection/teamSection.component.scss":
+/*!*******************************************************************!*\
+  !*** ./src/app/components/teamSection/teamSection.component.scss ***!
+  \*******************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvdHlwb2dyYXBoeS90eXBvZ3JhcGh5LmNvbXBvbmVudC5zY3NzIn0= */");
+/* harmony default export */ __webpack_exports__["default"] = (".hover-profile-card {\n  opacity: 1;\n  display: block;\n  width: 100%;\n  height: auto;\n  transition: 0.5s ease;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n}\n\n.hover-profile-card .imgHover {\n  width: 150px;\n}\n\n.hover-profile-card:hover .imgHover {\n  opacity: 0.3;\n}\n\n.hover-profile-card:hover .imgIcon {\n  opacity: 1;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3J1bm5lci93b3JrL2NvZGVKdW5jdGlvbi1zaXRlL2NvZGVKdW5jdGlvbi1zaXRlL3NyYy9hcHAvY29tcG9uZW50cy90ZWFtU2VjdGlvbi90ZWFtU2VjdGlvbi5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvY29tcG9uZW50cy90ZWFtU2VjdGlvbi90ZWFtU2VjdGlvbi5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLFVBQUE7RUFDQSxjQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7RUFDQSxxQkFBQTtFQUNBLG1DQUFBO1VBQUEsMkJBQUE7QUNDSjs7QURFQTtFQUNJLFlBQUE7QUNDSjs7QURFQTtFQUNJLFlBQUE7QUNDSjs7QURFQTtFQUNJLFVBQUE7QUNDSiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvdGVhbVNlY3Rpb24vdGVhbVNlY3Rpb24uY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaG92ZXItcHJvZmlsZS1jYXJkIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGhlaWdodDogYXV0bztcbiAgICB0cmFuc2l0aW9uOiAwLjVzIGVhc2U7XG4gICAgYmFja2ZhY2UtdmlzaWJpbGl0eTogaGlkZGVuO1xufVxuXG4uaG92ZXItcHJvZmlsZS1jYXJkIC5pbWdIb3ZlciB7XG4gICAgd2lkdGg6IDE1MHB4O1xufVxuXG4uaG92ZXItcHJvZmlsZS1jYXJkOmhvdmVyIC5pbWdIb3ZlciB7XG4gICAgb3BhY2l0eTogMC4zO1xufVxuXG4uaG92ZXItcHJvZmlsZS1jYXJkOmhvdmVyIC5pbWdJY29uIHtcbiAgICBvcGFjaXR5OiAxO1xufVxuIiwiLmhvdmVyLXByb2ZpbGUtY2FyZCB7XG4gIG9wYWNpdHk6IDE7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiBhdXRvO1xuICB0cmFuc2l0aW9uOiAwLjVzIGVhc2U7XG4gIGJhY2tmYWNlLXZpc2liaWxpdHk6IGhpZGRlbjtcbn1cblxuLmhvdmVyLXByb2ZpbGUtY2FyZCAuaW1nSG92ZXIge1xuICB3aWR0aDogMTUwcHg7XG59XG5cbi5ob3Zlci1wcm9maWxlLWNhcmQ6aG92ZXIgLmltZ0hvdmVyIHtcbiAgb3BhY2l0eTogMC4zO1xufVxuXG4uaG92ZXItcHJvZmlsZS1jYXJkOmhvdmVyIC5pbWdJY29uIHtcbiAgb3BhY2l0eTogMTtcbn0iXX0= */");
 
 /***/ }),
 
-/***/ "./src/app/components/typography/typography.component.ts":
-/*!***************************************************************!*\
-  !*** ./src/app/components/typography/typography.component.ts ***!
-  \***************************************************************/
-/*! exports provided: TypographyComponent */
+/***/ "./src/app/components/teamSection/teamSection.component.ts":
+/*!*****************************************************************!*\
+  !*** ./src/app/components/teamSection/teamSection.component.ts ***!
+  \*****************************************************************/
+/*! exports provided: TeamSectionComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TypographyComponent", function() { return TypographyComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TeamSectionComponent", function() { return TeamSectionComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
+/* harmony import */ var _assets_json_team_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../assets/json/team.json */ "./src/assets/json/team.json");
+var _assets_json_team_json__WEBPACK_IMPORTED_MODULE_1___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../../assets/json/team.json */ "./src/assets/json/team.json", 1);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -990,19 +992,21 @@ var __importDefault = (undefined && undefined.__importDefault) || function (mod)
   return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 
-var TypographyComponent = /** @class */ (function () {
-    function TypographyComponent() {
+
+var TeamSectionComponent = /** @class */ (function () {
+    function TeamSectionComponent() {
+        this.teamMembers = _assets_json_team_json__WEBPACK_IMPORTED_MODULE_1__;
     }
-    TypographyComponent.prototype.ngOnInit = function () { };
-    TypographyComponent = __decorate([
+    TeamSectionComponent.prototype.ngOnInit = function () { };
+    TeamSectionComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-typography',
-            template: __importDefault(__webpack_require__(/*! raw-loader!./typography.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/typography/typography.component.html")).default,
-            styles: [__importDefault(__webpack_require__(/*! ./typography.component.scss */ "./src/app/components/typography/typography.component.scss")).default]
+            template: __importDefault(__webpack_require__(/*! raw-loader!./teamSection.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/teamSection/teamSection.component.html")).default,
+            styles: [__importDefault(__webpack_require__(/*! ./teamSection.component.scss */ "./src/app/components/teamSection/teamSection.component.scss")).default]
         }),
         __metadata("design:paramtypes", [])
-    ], TypographyComponent);
-    return TypographyComponent;
+    ], TeamSectionComponent);
+    return TeamSectionComponent;
 }());
 
 
@@ -1412,6 +1416,17 @@ var NavbarComponent = /** @class */ (function () {
 }());
 
 
+
+/***/ }),
+
+/***/ "./src/assets/json/team.json":
+/*!***********************************!*\
+  !*** ./src/assets/json/team.json ***!
+  \***********************************/
+/*! exports provided: 0, 1, 2, 3, 4, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"firstName\":\"Hasal\",\"image\":\"hasal.jpg\",\"social\":{\"linkedin\":\"\"}},{\"firstName\":\"Janeth\",\"image\":\"janeth.jpg\",\"social\":{\"linkedin\":\"\"}},{\"firstName\":\"Nandula\",\"image\":\"nandula.png\",\"social\":{\"linkedin\":\"\"}},{\"firstName\":\"Purushoth\",\"image\":\"purushoth.jpg\",\"social\":{\"linkedin\":\"\"}},{\"firstName\":\"Rajitha\",\"image\":\"rajitha.jpg\",\"social\":{\"linkedin\":\"\"}}]");
 
 /***/ }),
 
