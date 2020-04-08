@@ -3,6 +3,8 @@
   "compilerOptions": {
     "outDir": "../out-tsc/app",
     "module": "es2015",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "baseUrl": "",
     "types": []
   },

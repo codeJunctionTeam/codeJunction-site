@@ -1,0 +1,37 @@
+[
+  {
+    "firstName": "Hasal",
+    "image": "hasal.jpg",
+    "social": {
+      "linkedin": ""
+    }
+  },
+  {
+    "firstName": "Janeth",
+    "image": "janeth.jpg",
+    "social": {
+      "linkedin": ""
+    }
+  },
+  {
+    "firstName": "Nandula",
+    "image": "nandula.png",
+    "social": {
+      "linkedin": ""
+    }
+  },
+  {
+    "firstName": "Purushoth",
+    "image": "purushoth.jpg",
+    "social": {
+      "linkedin": ""
+    }
+  },
+  {
+    "firstName": "Rajitha",
+    "image": "rajitha.jpg",
+    "social": {
+      "linkedin": ""
+    }
+  }
+]
