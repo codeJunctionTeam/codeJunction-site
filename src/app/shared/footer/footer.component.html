@@ -1,16 +1,47 @@
 <footer class="footer">
     <div class="container">
-        <div class="row">
-            <nav class="footer-nav">
-                <ul>
-                    <li><a href="https://www.creative-tim.com">Creative Tim</a></li>
-                    <li><a href="http://blog.creative-tim.com">Blog</a></li>
-                    <li><a href="https://www.creative-tim.com/license">Licenses</a></li>
-                </ul>
-            </nav>
-            <div class="credits ml-auto">
-                <span class="copyright">
-                    © {{test | date: 'yyyy'}}, made with <i class="fa fa-heart heart"></i> by Creative Tim
+        <div class="row flex-row-reverse">
+            <div class="credits col-md-4">
+                <span class="footer-title justify-content-center d-flex">Menu</span>
+                <br/>
+                <div class="meta-links justify-content-center d-flex">
+                    <ul>
+                        <li class="meta-link"><a href="#">Home</a></li>
+                        <li class="meta-link"><a href="">About Us</a></li>
+                        <li class="meta-link"><a href="">Our Projects</a></li>
+                        <li class="meta-link"><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="credits col-md-4">
+                <span class="footer-title justify-content-center d-flex">Contact Us</span>
+                <span class="contact justify-content-center d-flex">
+                    Mail : <span><a href="mailto:codejunctioncrew@gmail.com">&nbsp;codejunctioncrew@gmail.com</a></span>
+                </span>
+                <span class="contact justify-content-center d-flex">
+                    Tel : <span>&nbsp;+94 72 1177569</span>
+                </span>
+            </div>
+            <div class="credits col-md-4">
+                <span class="footer-title justify-content-center d-flex">codeJunction</span>
+                <div class="social-icons justify-content-center d-flex">
+                    <div class="social-icon col-md-3"></div>
+                    <div class="social-icon col-md-3">
+                        <a rel="tooltip" title="Star on GitHub" data-placement="bottom" href="https://github.com/codeJunctionTeam/codeJunction-site" target="_blank">
+                            <i class="fa fa-github"></i>
+                            <p class="d-md-none">GitHub</p>
+                        </a>
+                    </div>
+                    <div class="social-icon col-md-3">
+                        <a rel="tooltip" title="Meet us" data-placement="bottom" href="https://linkedin.com/company/codejunction" target="_blank">
+                            <i class="fa fa-linkedin-square"></i>
+                            <p class="d-md-none">LinkedIn</p>
+                        </a>
+                    </div>
+                    <div class="social-icon col-md-3"></div>
+                </div>
+                <span class="copyright justify-content-center d-flex">
+                    © {{test | date: 'yyyy'}} codeJunction
                 </span>
             </div>
         </div>

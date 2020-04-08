@@ -8,7 +8,7 @@ import { RouterModule } from '@angular/router';
 
 import { BasicelementsComponent } from './basicelements/basicelements.component';
 import { NavigationComponent } from './navigation/navigation.component';
-import { TypographyComponent } from './typography/typography.component';
+import { TeamSectionComponent } from './teamSection/teamSection.component';
 import { NucleoiconsComponent } from './nucleoicons/nucleoicons.component';
 import { ComponentsComponent } from './components.component';
 import { NotificationComponent } from './notification/notification.component';
@@ -28,7 +28,7 @@ import { NgbdModalContent } from './modal/modal.component';
         ComponentsComponent,
         BasicelementsComponent,
         NavigationComponent,
-        TypographyComponent,
+        TeamSectionComponent,
         NucleoiconsComponent,
         NotificationComponent,
         NgbdModalComponent,
