@@ -11,6 +11,12 @@
         <div class="navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" title="Subscribe" data-placement="bottom" href="http://www.youtube.com/channel/UC3rlLY5RpyV-QJcWFEXJSLQ" target="_blank">
+                        <i class="fa fa-youtube-play"></i>
+                        <p class="d-lg-none">YouTube</p>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
                     <a class="nav-link" rel="tooltip" title="Star on GitHub" data-placement="bottom" href="https://github.com/codeJunctionTeam/codeJunction-site" target="_blank">
                         <i class="fa fa-github"></i>
                         <p class="d-lg-none">GitHub</p>
@@ -20,6 +26,12 @@
                     <a class="nav-link" rel="tooltip" title="Meet us" data-placement="bottom" href="https://linkedin.com/company/codejunction" target="_blank">
                         <i class="fa fa-linkedin-square"></i>
                         <p class="d-lg-none">LinkedIn</p>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" title="Contact us" data-placement="bottom" href="https://www.facebook.com/codeJunctioncrew/" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                        <p class="d-lg-none">Facebook</p>
                     </a>
                 </li>
             </ul>
