@@ -21,7 +21,7 @@ Paper Kit 2 Angular is built on top of Bootstrap 4, so it fully supports it. Mos
 * [Demo](#demo)
 * [Quick Start](#quick-start)
 * [Documentation](#documentation)
-* [Contributing](#contributing)
+* [Setting Up the Project](#setting-up-the-project)
 * [File Structure](#file-structure)
 * [Browser Support](#browser-support)
 * [Resources](#resources)
