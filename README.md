@@ -21,6 +21,7 @@ Paper Kit 2 Angular is built on top of Bootstrap 4, so it fully supports it. Mos
 * [Demo](#demo)
 * [Quick Start](#quick-start)
 * [Documentation](#documentation)
+* [Contributing](#contributing)
 * [File Structure](#file-structure)
 * [Browser Support](#browser-support)
 * [Resources](#resources)
@@ -63,13 +64,64 @@ Quick start options:
 
 Once you download the archive, you will be able find a tutorial page inside it explaining how to start using it. You can also check the [documentation online](https://demos.creative-tim.com/paper-kit-2-angular/documentation/tutorial).
 
+## Setting Up the Project
+
+These are the instructions for setting up the project locally. If you are hoping to contribute to the project, this will help you do all the changes locally.
+
+### Install NodeJs 
+
+Install NodeJs from [NodeJs Official Page](https://nodejs.org/en/).
+
+### Fork the project
+
+You can fork the project by clicking the fork button on the top right corner of the page.
+
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/35809841/78868986-77e2f380-7a61-11ea-9cfd-56bdc75e0654.gif)
+
+While it's forking, it will look like this.
+
+![ezgif com-video-to-gif (1)](https://user-images.githubusercontent.com/35809841/78869159-bd9fbc00-7a61-11ea-976c-8aabb1e42099.gif)
+
+### Clone the project you forked
+
+The URL of the project you cloned would look like 
+(Replace [your_username] with your github username.)
+``` https://github.com/[your_username]/codeJunction-site```
+
+You can clone it to your local machine by typing and entering the below command in your terminal. 
+(Replace [your_username] with your github username.)
+``` git clone https://github.com/[your_username]/codeJunction-site```
+
+![ezgif com-video-to-gif (2)](https://user-images.githubusercontent.com/35809841/78869616-78c85500-7a62-11ea-91bc-7c62a072bfe9.gif)
+
+### Build and Run the Project
+
+Move to the project folder
+
+```cd codeJunction-site```
+
+![ezgif com-video-to-gif (3)](https://user-images.githubusercontent.com/35809841/78870157-5420ad00-7a63-11ea-9ee4-92ab3ccda1db.gif)
+
+Run the following command to install the angular cli latest version
+``` npm install -g @angular/cli@latest```
+
+Then run an npm install
+``` npm install```
+
+After that, do a npm start 
+``` npm start```
+
+Now the project should be up and running in the default port
+```  http://localhost:4200/```
+
+
+
 ## File Structure
 
 Within the download you'll find the following directories and files:
 
 ```
 paper-kit-2-angular
-├── CHANGELOG.md
 ├── ISSUE_TEMPLATE.md
 ├── LICENSE.md
 ├── README.md
@@ -221,16 +273,13 @@ If you have questions or need help integrating the product please [contact us](h
 
 ##### Social Media
 
-Twitter: <https://twitter.com/CreativeTim>
+YouTube: <https://www.youtube.com/channel/UC3rlLY5RpyV-QJcWFEXJSLQ>
 
-Facebook: <https://www.facebook.com/CreativeTim>
+Facebook: <https://www.facebook.com/codeJunctioncrew>
 
-Dribbble: <https://dribbble.com/creativetim>
+Instagram: <https://instagram.com/codeJunctioncrew>
 
-Google+: <https://plus.google.com/+CreativetimPage>
+LinkedIn: <https://www.linkedin.com/company/codejunction>
 
-Instagram: <https://instagram.com/creativetimofficial>
-
-[CHANGELOG]: ./CHANGELOG.md
 [LICENSE]: ./LICENSE.md
 [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
