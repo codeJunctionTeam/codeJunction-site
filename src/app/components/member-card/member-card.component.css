@@ -1,0 +1,49 @@
+.member-modal{
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.member-modal .close{
+    outline: none !important;
+}
+
+.modal-body{
+    text-align: center;
+}
+
+.modal-footer{
+    padding-bottom: 10px;
+}
+
+.modal-title{
+    font-weight: bold;
+}
+
+.profile-pic{
+    height: 40%;
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+.member-description{
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.connected{
+    margin-top: 10px;
+    color: gray;
+}
+
+.modal-body .social-media-links{
+    margin-top: 10px;
+}
+
+.social-link{
+    padding: 1%;
+}
+
+.social-link .fa{
+    color: #000000;
+    font-size: large
+}
