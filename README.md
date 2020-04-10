@@ -1,5 +1,7 @@
 # [codeJunction Official Website](https://codejunctionteam.github.io/codeJunction-site)
 
+![Build Status](https://github.com/codeJunctionTeam/codeJunction-site/workflows/Deploy/badge.svg) ![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)
+
 ## Table of Contents
 
 * [Setting Up the Project](#setting-up-the-project)
