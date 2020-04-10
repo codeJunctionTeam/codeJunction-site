@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import teamMembers from '../../../assets/json/team.json';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbdModalComponent } from '../modal/modal.component';
+import { MemberCardComponent } from '../member-card/member-card.component';
 
 @Component({
     selector: 'app-typography',
@@ -8,9 +11,14 @@ import teamMembers from '../../../assets/json/team.json';
 })
 export class TeamSectionComponent implements OnInit {
 
-  constructor() { }
+  constructor(private modalService: NgbModal) { }
 
   ngOnInit() {}
+
+  showMemberCard(index) {
+      const card = new MemberCardComponent(this.modalService);
+      card.open(teamMembers[index]["fullName"],teamMembers[index]["image"],teamMembers[index]["description"],teamMembers[index]["social"]);
+  }
 
       teamMembers: any = teamMembers;
 }
