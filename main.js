@@ -39,6 +39,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/member-card/member-card.component.html":
+/*!*********************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/member-card/member-card.component.html ***!
+  \*********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("");
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/modal/modal.component.html":
 /*!*********************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/modal/modal.component.html ***!
@@ -100,7 +113,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"section\">\n    <div class=\"section section-dark\">\n        <div class=\"container\">\n            <div class=\"col-md-auto\">\n                <h2 class=\"title\">Team Members</h2>\n            </div>\n        </div>\n        <br>\n        <div class=\"container\">\n            <div class=\"row justify-content-center\">\n                <div *ngFor=\"let teamMember of teamMembers\">\n                    <div class=\"col-sm-auto\">\n                        <div class=\"hover-profile-card\">\n                            <img src=\"assets/img/faces/{{teamMember.image}}\"\n                                 class=\"rounded-circle img-center img-fluid shadow shadow-lg--hover imgHover\">\n                            <h5 class=\"title\" style=\"text-align: center;\">\n                                <div class=\"firstName\">{{teamMember.firstName}}</div>\n                            </h5>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"section\">\n    <div class=\"section section-dark\">\n        <div class=\"container\">\n            <div class=\"col-md-auto\">\n                <h2 class=\"title\">Team Members</h2>\n            </div>\n        </div>\n        <br>\n        <div class=\"container\">\n            <div class=\"row justify-content-center\">\n                <div *ngFor=\"let teamMember of teamMembers; let i = index\">\n                    <div class=\"col-sm-auto\">\n                        <div class=\"hover-profile-card\" (click)=\"showMemberCard(i)\">\n                            <img src=\"assets/img/faces/{{teamMember.image}}\"\n                                 class=\"rounded-circle img-center img-fluid shadow shadow-lg--hover imgHover\">\n                            <h5 class=\"title\" style=\"text-align: center;\">\n                                <div class=\"firstName\">{{teamMember.firstName}}</div>\n                            </h5>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n");
 
 /***/ }),
 
@@ -613,6 +626,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components.component */ "./src/app/components/components.component.ts");
 /* harmony import */ var _notification_notification_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./notification/notification.component */ "./src/app/components/notification/notification.component.ts");
 /* harmony import */ var _modal_modal_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./modal/modal.component */ "./src/app/components/modal/modal.component.ts");
+/* harmony import */ var _member_card_member_card_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./member-card/member-card.component */ "./src/app/components/member-card/member-card.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -622,6 +636,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
   return (mod && mod.__esModule) ? mod : { "default": mod };
 };
+
 
 
 
@@ -658,13 +673,108 @@ var ComponentsModule = /** @class */ (function () {
                 _nucleoicons_nucleoicons_component__WEBPACK_IMPORTED_MODULE_10__["NucleoiconsComponent"],
                 _notification_notification_component__WEBPACK_IMPORTED_MODULE_12__["NotificationComponent"],
                 _modal_modal_component__WEBPACK_IMPORTED_MODULE_13__["NgbdModalComponent"],
-                _modal_modal_component__WEBPACK_IMPORTED_MODULE_13__["NgbdModalContent"]
+                _modal_modal_component__WEBPACK_IMPORTED_MODULE_13__["NgbdModalContent"],
+                _member_card_member_card_component__WEBPACK_IMPORTED_MODULE_14__["MemberCardComponent"]
             ],
             entryComponents: [_modal_modal_component__WEBPACK_IMPORTED_MODULE_13__["NgbdModalContent"]],
             exports: [_components_component__WEBPACK_IMPORTED_MODULE_11__["ComponentsComponent"]]
         })
     ], ComponentsModule);
     return ComponentsModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/member-card/member-card.component.css":
+/*!******************************************************************!*\
+  !*** ./src/app/components/member-card/member-card.component.css ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".member-modal{\n    background-color: #ffffff;\n    border-radius: 5px;\n}\n\n.member-modal .close{\n    outline: none !important;\n}\n\n.modal-body{\n    text-align: center;\n}\n\n.modal-footer{\n    padding-bottom: 10px;\n}\n\n.modal-title{\n    font-weight: bold;\n}\n\n.profile-pic{\n    height: 40%;\n    width: 40%;\n    margin-bottom: 10px;\n}\n\n.member-description{\n    text-align: justify;\n    margin-top: 10px;\n}\n\n.connected{\n    margin-top: 10px;\n    color: gray;\n}\n\n.modal-body .social-media-links{\n    margin-top: 10px;\n}\n\n.social-link{\n    padding: 1%;\n}\n\n.social-link .fa{\n    color: #000000;\n    font-size: large\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9tZW1iZXItY2FyZC9tZW1iZXItY2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0kseUJBQXlCO0lBQ3pCLGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJLHdCQUF3QjtBQUM1Qjs7QUFFQTtJQUNJLGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJLG9CQUFvQjtBQUN4Qjs7QUFFQTtJQUNJLGlCQUFpQjtBQUNyQjs7QUFFQTtJQUNJLFdBQVc7SUFDWCxVQUFVO0lBQ1YsbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0ksbUJBQW1CO0lBQ25CLGdCQUFnQjtBQUNwQjs7QUFFQTtJQUNJLGdCQUFnQjtJQUNoQixXQUFXO0FBQ2Y7O0FBRUE7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxXQUFXO0FBQ2Y7O0FBRUE7SUFDSSxjQUFjO0lBQ2Q7QUFDSiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvbWVtYmVyLWNhcmQvbWVtYmVyLWNhcmQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5tZW1iZXItbW9kYWx7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZmZmZjtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG59XG5cbi5tZW1iZXItbW9kYWwgLmNsb3Nle1xuICAgIG91dGxpbmU6IG5vbmUgIWltcG9ydGFudDtcbn1cblxuLm1vZGFsLWJvZHl7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4ubW9kYWwtZm9vdGVye1xuICAgIHBhZGRpbmctYm90dG9tOiAxMHB4O1xufVxuXG4ubW9kYWwtdGl0bGV7XG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG59XG5cbi5wcm9maWxlLXBpY3tcbiAgICBoZWlnaHQ6IDQwJTtcbiAgICB3aWR0aDogNDAlO1xuICAgIG1hcmdpbi1ib3R0b206IDEwcHg7XG59XG5cbi5tZW1iZXItZGVzY3JpcHRpb257XG4gICAgdGV4dC1hbGlnbjoganVzdGlmeTtcbiAgICBtYXJnaW4tdG9wOiAxMHB4O1xufVxuXG4uY29ubmVjdGVke1xuICAgIG1hcmdpbi10b3A6IDEwcHg7XG4gICAgY29sb3I6IGdyYXk7XG59XG5cbi5tb2RhbC1ib2R5IC5zb2NpYWwtbWVkaWEtbGlua3N7XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbn1cblxuLnNvY2lhbC1saW5re1xuICAgIHBhZGRpbmc6IDElO1xufVxuXG4uc29jaWFsLWxpbmsgLmZhe1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgIGZvbnQtc2l6ZTogbGFyZ2Vcbn1cbiJdfQ== */");
+
+/***/ }),
+
+/***/ "./src/app/components/member-card/member-card.component.ts":
+/*!*****************************************************************!*\
+  !*** ./src/app/components/member-card/member-card.component.ts ***!
+  \*****************************************************************/
+/*! exports provided: MemberCardContent, MemberCardComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MemberCardContent", function() { return MemberCardContent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MemberCardComponent", function() { return MemberCardComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm5/ng-bootstrap.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
+  return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+
+
+var MemberCardContent = /** @class */ (function () {
+    function MemberCardContent(activeModal) {
+        this.activeModal = activeModal;
+    }
+    MemberCardContent.ctorParameters = function () { return [
+        { type: _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_1__["NgbActiveModal"] }
+    ]; };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", Object)
+    ], MemberCardContent.prototype, "name", void 0);
+    MemberCardContent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-member-card',
+            template: "<div class=\"member-modal\">\n    <div class=\"modal-header no-border-header\">\n      <h5 class=\"modal-title text-center\">&nbsp;</h5>\n      <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"activeModal.dismiss('Cross click')\">\n        <span aria-hidden=\"true\">&times;</span>\n      </button>\n    </div>\n    <div class=\"modal-body\">\n      <img src=\"assets/img/faces/{{image}}\" class=\"rounded-circle img-center img-fluid profile-pic\">\n      <h5 class=\"modal-title text-center\">{{fullName}}</h5>\n      <div class=\"member-description\">{{description}}</div>\n      <div class=\"connected\">Get Connected</div>\n      <div class=\"row justify-content-center social-media-links\">\n        <div class=\"col-xs-4 social-link\">\n          <a rel=\"tooltip\" title=\"Facebook\" data-placement=\"bottom\" href=\"{{facebook}}\" target=\"_blank\">\n            <i class=\"fa fa-facebook\"></i>\n          </a>\n        </div>\n        <div class=\"col-xs-4 social-link\">\n          <a rel=\"tooltip\" title=\"Instagram\" data-placement=\"bottom\" href=\"{{instagram}}\" target=\"_blank\">\n            <i class=\"fa fa-instagram\"></i>\n          </a>\n        </div>\n        <div class=\"col-xs-4 social-link\">\n          <a rel=\"tooltip\" title=\"LinkedIn\" data-placement=\"bottom\" href=\"{{linkedin}}\" target=\"_blank\">\n            <i class=\"fa fa-linkedin-square\"></i>\n          </a>\n        </div>\n      </div>\n    </div>\n    <div class=\"modal-footer no-border-footer\">\n      <div class=\"member-close mx-auto\">\n        <button type=\"button\" class=\"btn btn btn-outline-primary btn-round\" (click)=\"activeModal.close('Close click')\">Close</button>\n      </div>\n    </div>\n  </div>",
+            styles: [__importDefault(__webpack_require__(/*! ./member-card.component.css */ "./src/app/components/member-card/member-card.component.css")).default]
+        }),
+        __metadata("design:paramtypes", [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_1__["NgbActiveModal"]])
+    ], MemberCardContent);
+    return MemberCardContent;
+}());
+
+var MemberCardComponent = /** @class */ (function () {
+    function MemberCardComponent(modalService) {
+        this.modalService = modalService;
+        this.closeResult = '';
+    }
+    MemberCardComponent.prototype.ngOnInit = function () { };
+    MemberCardComponent.prototype.open = function (fullName, image, description, social) {
+        var modalRef = this.modalService.open(MemberCardContent);
+        modalRef.componentInstance.fullName = fullName;
+        modalRef.componentInstance.image = image;
+        modalRef.componentInstance.description = description;
+        modalRef.componentInstance.linkedin = social["linkedin"];
+        modalRef.componentInstance.facebook = social["facebook"];
+        modalRef.componentInstance.instagram = social["instagram"];
+    };
+    MemberCardComponent.ctorParameters = function () { return [
+        { type: _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_1__["NgbModal"] }
+    ]; };
+    MemberCardComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'member-card-component',
+            template: __importDefault(__webpack_require__(/*! raw-loader!./member-card.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/member-card/member-card.component.html")).default
+        }),
+        __metadata("design:paramtypes", [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_1__["NgbModal"]])
+    ], MemberCardComponent);
+    return MemberCardComponent;
 }());
 
 
@@ -962,7 +1072,7 @@ var NucleoiconsComponent = /** @class */ (function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".hover-profile-card {\n  opacity: 1;\n  display: block;\n  width: 100%;\n  height: auto;\n  transition: 0.5s ease;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n}\n\n.hover-profile-card .imgHover {\n  width: 150px;\n}\n\n.hover-profile-card:hover .imgHover {\n  opacity: 0.3;\n}\n\n.hover-profile-card:hover .imgIcon {\n  opacity: 1;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3J1bm5lci93b3JrL2NvZGVKdW5jdGlvbi1zaXRlL2NvZGVKdW5jdGlvbi1zaXRlL3NyYy9hcHAvY29tcG9uZW50cy90ZWFtU2VjdGlvbi90ZWFtU2VjdGlvbi5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvY29tcG9uZW50cy90ZWFtU2VjdGlvbi90ZWFtU2VjdGlvbi5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLFVBQUE7RUFDQSxjQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7RUFDQSxxQkFBQTtFQUNBLG1DQUFBO1VBQUEsMkJBQUE7QUNDSjs7QURFQTtFQUNJLFlBQUE7QUNDSjs7QURFQTtFQUNJLFlBQUE7QUNDSjs7QURFQTtFQUNJLFVBQUE7QUNDSiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvdGVhbVNlY3Rpb24vdGVhbVNlY3Rpb24uY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaG92ZXItcHJvZmlsZS1jYXJkIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGhlaWdodDogYXV0bztcbiAgICB0cmFuc2l0aW9uOiAwLjVzIGVhc2U7XG4gICAgYmFja2ZhY2UtdmlzaWJpbGl0eTogaGlkZGVuO1xufVxuXG4uaG92ZXItcHJvZmlsZS1jYXJkIC5pbWdIb3ZlciB7XG4gICAgd2lkdGg6IDE1MHB4O1xufVxuXG4uaG92ZXItcHJvZmlsZS1jYXJkOmhvdmVyIC5pbWdIb3ZlciB7XG4gICAgb3BhY2l0eTogMC4zO1xufVxuXG4uaG92ZXItcHJvZmlsZS1jYXJkOmhvdmVyIC5pbWdJY29uIHtcbiAgICBvcGFjaXR5OiAxO1xufVxuIiwiLmhvdmVyLXByb2ZpbGUtY2FyZCB7XG4gIG9wYWNpdHk6IDE7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiBhdXRvO1xuICB0cmFuc2l0aW9uOiAwLjVzIGVhc2U7XG4gIGJhY2tmYWNlLXZpc2liaWxpdHk6IGhpZGRlbjtcbn1cblxuLmhvdmVyLXByb2ZpbGUtY2FyZCAuaW1nSG92ZXIge1xuICB3aWR0aDogMTUwcHg7XG59XG5cbi5ob3Zlci1wcm9maWxlLWNhcmQ6aG92ZXIgLmltZ0hvdmVyIHtcbiAgb3BhY2l0eTogMC4zO1xufVxuXG4uaG92ZXItcHJvZmlsZS1jYXJkOmhvdmVyIC5pbWdJY29uIHtcbiAgb3BhY2l0eTogMTtcbn0iXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = (".hover-profile-card {\n  opacity: 1;\n  display: block;\n  width: 100%;\n  height: auto;\n  transition: 0.5s ease;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n}\n\n.hover-profile-card .imgHover {\n  width: 150px;\n}\n\n.hover-profile-card:hover .imgHover {\n  opacity: 0.3;\n}\n\n.hover-profile-card:hover .imgIcon {\n  opacity: 1;\n}\n\n.hover-profile-card:hover {\n  cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3J1bm5lci93b3JrL2NvZGVKdW5jdGlvbi1zaXRlL2NvZGVKdW5jdGlvbi1zaXRlL3NyYy9hcHAvY29tcG9uZW50cy90ZWFtU2VjdGlvbi90ZWFtU2VjdGlvbi5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvY29tcG9uZW50cy90ZWFtU2VjdGlvbi90ZWFtU2VjdGlvbi5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLFVBQUE7RUFDQSxjQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7RUFDQSxxQkFBQTtFQUNBLG1DQUFBO1VBQUEsMkJBQUE7QUNDSjs7QURFQTtFQUNJLFlBQUE7QUNDSjs7QURFQTtFQUNJLFlBQUE7QUNDSjs7QURFQTtFQUNJLFVBQUE7QUNDSjs7QURFQTtFQUNJLGVBQUE7QUNDSiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvdGVhbVNlY3Rpb24vdGVhbVNlY3Rpb24uY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaG92ZXItcHJvZmlsZS1jYXJkIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGhlaWdodDogYXV0bztcbiAgICB0cmFuc2l0aW9uOiAwLjVzIGVhc2U7XG4gICAgYmFja2ZhY2UtdmlzaWJpbGl0eTogaGlkZGVuO1xufVxuXG4uaG92ZXItcHJvZmlsZS1jYXJkIC5pbWdIb3ZlciB7XG4gICAgd2lkdGg6IDE1MHB4O1xufVxuXG4uaG92ZXItcHJvZmlsZS1jYXJkOmhvdmVyIC5pbWdIb3ZlciB7XG4gICAgb3BhY2l0eTogMC4zO1xufVxuXG4uaG92ZXItcHJvZmlsZS1jYXJkOmhvdmVyIC5pbWdJY29uIHtcbiAgICBvcGFjaXR5OiAxO1xufVxuXG4uaG92ZXItcHJvZmlsZS1jYXJkOmhvdmVye1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cbiIsIi5ob3Zlci1wcm9maWxlLWNhcmQge1xuICBvcGFjaXR5OiAxO1xuICBkaXNwbGF5OiBibG9jaztcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogYXV0bztcbiAgdHJhbnNpdGlvbjogMC41cyBlYXNlO1xuICBiYWNrZmFjZS12aXNpYmlsaXR5OiBoaWRkZW47XG59XG5cbi5ob3Zlci1wcm9maWxlLWNhcmQgLmltZ0hvdmVyIHtcbiAgd2lkdGg6IDE1MHB4O1xufVxuXG4uaG92ZXItcHJvZmlsZS1jYXJkOmhvdmVyIC5pbWdIb3ZlciB7XG4gIG9wYWNpdHk6IDAuMztcbn1cblxuLmhvdmVyLXByb2ZpbGUtY2FyZDpob3ZlciAuaW1nSWNvbiB7XG4gIG9wYWNpdHk6IDE7XG59XG5cbi5ob3Zlci1wcm9maWxlLWNhcmQ6aG92ZXIge1xuICBjdXJzb3I6IHBvaW50ZXI7XG59Il19 */");
 
 /***/ }),
 
@@ -979,6 +1089,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
 /* harmony import */ var _assets_json_team_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../assets/json/team.json */ "./src/assets/json/team.json");
 var _assets_json_team_json__WEBPACK_IMPORTED_MODULE_1___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../../assets/json/team.json */ "./src/assets/json/team.json", 1);
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm5/ng-bootstrap.js");
+/* harmony import */ var _member_card_member_card_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../member-card/member-card.component */ "./src/app/components/member-card/member-card.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -993,18 +1105,28 @@ var __importDefault = (undefined && undefined.__importDefault) || function (mod)
 };
 
 
+
+
 var TeamSectionComponent = /** @class */ (function () {
-    function TeamSectionComponent() {
+    function TeamSectionComponent(modalService) {
+        this.modalService = modalService;
         this.teamMembers = _assets_json_team_json__WEBPACK_IMPORTED_MODULE_1__;
     }
     TeamSectionComponent.prototype.ngOnInit = function () { };
+    TeamSectionComponent.prototype.showMemberCard = function (index) {
+        var card = new _member_card_member_card_component__WEBPACK_IMPORTED_MODULE_3__["MemberCardComponent"](this.modalService);
+        card.open(_assets_json_team_json__WEBPACK_IMPORTED_MODULE_1__[index]["fullName"], _assets_json_team_json__WEBPACK_IMPORTED_MODULE_1__[index]["image"], _assets_json_team_json__WEBPACK_IMPORTED_MODULE_1__[index]["description"], _assets_json_team_json__WEBPACK_IMPORTED_MODULE_1__[index]["social"]);
+    };
+    TeamSectionComponent.ctorParameters = function () { return [
+        { type: _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_2__["NgbModal"] }
+    ]; };
     TeamSectionComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-typography',
             template: __importDefault(__webpack_require__(/*! raw-loader!./teamSection.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/teamSection/teamSection.component.html")).default,
             styles: [__importDefault(__webpack_require__(/*! ./teamSection.component.scss */ "./src/app/components/teamSection/teamSection.component.scss")).default]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_2__["NgbModal"]])
     ], TeamSectionComponent);
     return TeamSectionComponent;
 }());
@@ -1426,7 +1548,7 @@ var NavbarComponent = /** @class */ (function () {
 /*! exports provided: 0, 1, 2, 3, 4, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"firstName\":\"Hasal\",\"image\":\"hasal.jpg\",\"social\":{\"linkedin\":\"\"}},{\"firstName\":\"Janeth\",\"image\":\"janeth.jpg\",\"social\":{\"linkedin\":\"\"}},{\"firstName\":\"Nandula\",\"image\":\"nandula.png\",\"social\":{\"linkedin\":\"\"}},{\"firstName\":\"Purushoth\",\"image\":\"purushoth.jpg\",\"social\":{\"linkedin\":\"\"}},{\"firstName\":\"Rajitha\",\"image\":\"rajitha.jpg\",\"social\":{\"linkedin\":\"\"}}]");
+module.exports = JSON.parse("[{\"firstName\":\"Hasal\",\"fullName\":\"Hasal Fernando\",\"image\":\"hasal.jpg\",\"social\":{\"linkedin\":\"https://www.linkedin.com/in/hasalfernando/\",\"facebook\":\"https://www.facebook.com/hasal98fernando/\",\"instagram\":\"https://www.instagram.com/hasalfernando/\"},\"description\":\"Royalist, Co-Founder of codeJunction, undergraduate who's doing his internship as a Trainee Software Engineer at Zone 24x7. Developed passion towards tech from childhood. Quiet person by nature but, surely QUITE LOUD when it comes to tech but. Apart from tech, loves to edit videos, unsurprisingly most of them being about tech and others being about the places he travels to. \"},{\"firstName\":\"Janeth\",\"fullName\":\"Janeth Fernando\",\"image\":\"janeth.jpg\",\"social\":{\"linkedin\":\"https://www.linkedin.com/in/janethfernando/\",\"facebook\":\"https://www.facebook.com/janethavishka\",\"instagram\":\"https://www.instagram.com/_jan.eth_/\"},\"description\":\"Janeth is a software engineering undergraduate who currently does his internship at WSO2. He went to S.Thomas' College Mount Lavinia and he has done pretty well in both studies and extracurricular activities. Working in the ICT society at STC brought him the passion for being a software engineer. In his free time, he loves to travel around with his friends. Photography is one of his hobbies.\"},{\"firstName\":\"Nandula\",\"fullName\":\"Nandula Perera\",\"image\":\"nandula.png\",\"social\":{\"linkedin\":\"https://www.linkedin.com/in/nandulaperera/\",\"facebook\":\"https://www.facebook.com/nandula.perera.927\",\"instagram\":\"https://www.instagram.com/nandulaperera/\"},\"description\":\"Computer Science undergraduate at University of Colombo School of Computing. Studied at Lyceum International School, Panadura and excelled in both studies and extra activities. Has a great passion towards music, problem solving and application development. Interested to play the piano and the guitar during his free time.\"},{\"firstName\":\"Purushoth\",\"fullName\":\"Purushoth Anandaraja\",\"image\":\"purushoth.jpg\",\"social\":{\"linkedin\":\"https://www.linkedin.com/in/purushoth-anandaraja-ba9603160/\",\"facebook\":\"https://www.facebook.com/purushoth.anandaraja.5\",\"instagram\":\"https://www.instagram.com/purushoth_h/\"},\"description\":\"Purushoth is doing a Software Engineering undergraduate student from IIT, currently working as an intern at Global Market Technologies. He is interested in Software development and Project Management. He writes Blogs and likes to learn new trends in IT.\"},{\"firstName\":\"Rajitha\",\"fullName\":\"Rajitha Warusavitarana\",\"image\":\"rajitha.jpg\",\"social\":{\"linkedin\":\"https://www.linkedin.com/in/rajithawaru/\",\"facebook\":\"https://www.facebook.com/rajitha.Warusavitarana\",\"instagram\":\"https://www.instagram.com/rajitha.98/\"},\"description\":\"Rajitha is a software engineering undergraduate who is currently working as an intern at 99X Technology. He is passionate in cloud  computing, web development, data science and open-source.  He is a fan of food and ready to eat kottu at any time.  Rajitha loves to travel, swim, sing and party during his free time.\"}]");
 
 /***/ }),
 
