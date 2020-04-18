@@ -2,22 +2,22 @@
 
 ![Build Status](https://github.com/codeJunctionTeam/codeJunction-site/workflows/Deploy/badge.svg) ![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)
 
-## Table of Contents
+## Table of Contents.
 
 * [Setting Up the Project](#setting-up-the-project)
 * [Reporting Issues](#reporting-issues)
 * [Licensing](#licensing)
 * [Social Media](#social-media)
 
-## Setting Up the Project
+## Setting Up the Project.
 
 These are the instructions for setting up the project locally. If you are hoping to contribute to the project, this will help you do all the changes locally.
 
-### Install NodeJs 
+### Install NodeJs.
 
 Install NodeJs from [NodeJs Official Page](https://nodejs.org/en/).
 
-### Fork the project
+### Fork the project.
 
 You can fork the project by clicking the fork button on the top right corner of the page.
 
