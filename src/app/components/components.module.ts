@@ -15,6 +15,7 @@ import { NotificationComponent } from './notification/notification.component';
 import { NgbdModalComponent } from './modal/modal.component';
 import { NgbdModalContent } from './modal/modal.component';
 import { MemberCardComponent } from './member-card/member-card.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
     imports: [
@@ -34,7 +35,8 @@ import { MemberCardComponent } from './member-card/member-card.component';
         NotificationComponent,
         NgbdModalComponent,
         NgbdModalContent,
-        MemberCardComponent
+        MemberCardComponent,
+        CarouselComponent
     ],
     entryComponents: [NgbdModalContent],
     exports:[ ComponentsComponent ]

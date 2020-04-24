@@ -5,7 +5,7 @@ import { NgbdModalComponent } from '../modal/modal.component';
 import { MemberCardComponent } from '../member-card/member-card.component';
 
 @Component({
-    selector: 'app-typography',
+    selector: 'team-members',
     templateUrl: './teamSection.component.html',
     styleUrls: ['./teamSection.component.scss']
 })
