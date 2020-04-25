@@ -1,0 +1,34 @@
+.team-carousel-caption{
+    display: none;
+}
+
+.team-carousel .teamImg:hover{
+    background-color: black;
+    border-radius: 12px !important;
+}
+
+.team-carousel .teamImg:hover img{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.team-carousel .teamImg:hover .team-carousel-caption{
+    display: block;
+}
+
+.team-carousel .teamImg:hover .team-carousel-caption>p{
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+@media screen and (max-width:1024px){
+    .team-carousel img{
+        height: 80%;
+    }
+
+    .team-carousel .teamImg:hover .team-carousel-caption{
+        padding-bottom: 20px !important;
+        text-align: center;
+    }
+}

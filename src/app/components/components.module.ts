@@ -16,6 +16,7 @@ import { NgbdModalComponent } from './modal/modal.component';
 import { NgbdModalContent } from './modal/modal.component';
 import { MemberCardComponent } from './member-card/member-card.component';
 import { OurWorkComponent } from './our-work/our-work.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
     imports: [
@@ -36,7 +37,8 @@ import { OurWorkComponent } from './our-work/our-work.component';
         NgbdModalComponent,
         NgbdModalContent,
         MemberCardComponent,
-        OurWorkComponent
+        OurWorkComponent,
+        CarouselComponent
     ],
     entryComponents: [NgbdModalContent],
     exports: [ComponentsComponent]
