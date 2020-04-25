@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import teamImages from '../../../assets/json/teamCarousel.json';
 
 @Component({
   selector: 'app-carousel',
@@ -11,5 +12,7 @@ export class CarouselComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  teamCarousel: any = teamImages;
 
 }
