@@ -1,0 +1,19 @@
+<div class="section team-carousel" id="carousel">
+    <div class="container">
+        <div class="col-md-auto">
+            <h2 class="title">Our Team</h2>
+        </div>
+        <div class="page-carousel col-md-7 ml-auto mr-auto">
+            <ngb-carousel>
+                <ng-template ngbSlide #teamImg *ngFor="let teamPic of teamCarousel">
+                    <div class="teamImg"> 
+                        <img src="./assets/img/{{teamPic.image}}" alt="Team gatherings">
+                        <div class="carousel-caption team-carousel-caption">
+                            <p>{{teamPic.description}}</p>
+                        </div>
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+        </div>
+    </div>
+</div>

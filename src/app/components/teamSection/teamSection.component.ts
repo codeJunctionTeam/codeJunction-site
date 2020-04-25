@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import teamMembers from '../../../assets/json/team.json';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { NgbdModalComponent } from '../modal/modal.component';
 import { MemberCardComponent } from '../member-card/member-card.component';
 
 @Component({
-    selector: 'app-typography',
+    selector: 'team-members',
     templateUrl: './teamSection.component.html',
     styleUrls: ['./teamSection.component.scss']
 })
