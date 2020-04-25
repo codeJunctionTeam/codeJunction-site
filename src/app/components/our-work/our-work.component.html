@@ -1,24 +1,20 @@
-
 <div class="section">
     <div class="container">
         <h2>Our Work</h2>
         <div class="work-section">
-            <div class="row justify-content-cente">
-                <button type="button" class="slider_button btn btn-danger btn-just-icon"><i class="	fa fa-angle-left"
-                        (click)="backward()"></i></button>
-                <div class="project card" *ngFor="let x of view">
-                    <img class="card-img-top" src="../../../assets/img/faces/{{x.image}}" alt="Card image cap">
+            <div class="row justify-content-center">
+                <button type="button" class="slider_button btn btn-danger btn-just-icon" (click)="backward()"><i
+                        class="	fa fa-angle-left"></i></button>
+                <div class="project card" *ngFor="let project of listedProjects">
+                    <img class="card-img-top" src="../../../assets/img/work/{{project.image}}" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Sertum</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's
-                            content.</p>
+                        <h5 class="card-title"><b>{{project.projectName}}</b></h5>
+                        <p class="card-text" style="text-align: justify; font-size: 12px;">{{project.description}}</p>
                         <a href="#" class="btn btn-default">See more</a>
                     </div>
                 </div>
-                <button type="button" class="slider_button btn btn-danger btn-just-icon"><i class="fa fa-angle-right"
-                        (click)="foward()"></i></button>
+                <button type="button" class="slider_button btn btn-danger btn-just-icon" (click)="foward()"><i
+                        class="fa fa-angle-right"></i></button>
             </div>
         </div>
     </div>

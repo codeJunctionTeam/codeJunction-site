@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import projects from '../../../assets/json/work.json';
+import projects from '../../../assets/json/projects.json';
 
 
 @Component({
@@ -10,7 +10,7 @@ import projects from '../../../assets/json/work.json';
 export class OurWorkComponent implements OnInit {
 
   private displayCount;
-  public view;
+  public listedProjects;
   private clicker = 0;
   @HostListener('window:resize', ['$event'])
   onResize(event) {
@@ -24,19 +24,18 @@ export class OurWorkComponent implements OnInit {
   foward() {
     if (this.clicker < projects.length - this.displayCount) {
       this.clicker++;
-      this.view = projects.slice(0 + this.clicker, this.displayCount + this.clicker);
+      this.listedProjects = projects.slice(0 + this.clicker, this.displayCount + this.clicker);
     }
   }
 
   backward() {
     if (this.clicker > 0) {
       this.clicker--;
-      this.view = projects.slice(0 + this.clicker, this.displayCount + this.clicker);
+      this.listedProjects = projects.slice(0 + this.clicker, this.displayCount + this.clicker);
     }
   }
 
   adjustScreen(width) {
-    console.log(width)
     if (width < 750) {
       this.displayCount = 1;
     } else if (width < 800) {
@@ -49,6 +48,6 @@ export class OurWorkComponent implements OnInit {
     }else{
       this.displayCount = 4;
     }
-    this.view = projects.slice(0, this.displayCount);
+    this.listedProjects = projects.slice(0, this.displayCount);
   }
 }

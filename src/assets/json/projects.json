@@ -1,0 +1,32 @@
+[
+  {
+    "projectName": "Sertum",
+    "image": "sertum.jpg",
+    "description": "Sertum is a robot which can do both cleaning and serving on its own."
+  },
+  {
+    "projectName": "Cake-a-licious Website",
+    "image": "Cake-a-licious.png",
+    "description": "The official website of cake-a-licious cake store."
+  },
+  {
+    "projectName": "Ajith motors Entry System",
+    "image": "ajithMotors.jpg",
+    "description": "A data entry managment system deployed in Ajith motors car sale."
+  },
+  {
+    "projectName": "Fhix 45 Website",
+    "image": "fhix.png",
+    "description": "The official website of Fhix 45 gymnasium."
+  },
+  {
+    "projectName": "CodeJunction Website",
+    "image": "codeJuctionWebsite.png",
+    "description": "The official website of CodeJunction. (Open Source ❤️)"
+  },
+  {
+    "projectName": "Fire call",
+    "image": "firecall.jpg",
+    "description": "A sound wave classifying tool which analyse audio content. (Open Source ❤️)"
+  }
+]
