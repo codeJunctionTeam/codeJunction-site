@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { YoutubeService } from '../../services/thirdParty/youtube.service';
 
 @Component({
     selector: 'app-signup',
@@ -6,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./signup.component.scss']
 })
 export class SignupComponent implements OnInit {
-    test : Date = new Date();
+    test: Date = new Date();
     focus;
     focus1;
-    constructor() { }
+    constructor(
+        private youtubeService: YoutubeService
+    ) { }
 
-    ngOnInit() {}
+    ngOnInit() { }
+
+    displayYoutubePlaylist() {
+        this.youtubeService.getPlaylist(356).subscribe(result => {
+            console.log(result);
+        }, (error) => {
+            console.error(error);
+        });
+    }
 }
