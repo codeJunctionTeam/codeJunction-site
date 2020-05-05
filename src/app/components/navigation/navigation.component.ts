@@ -1,3 +1,4 @@
+/*
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -12,3 +13,4 @@ export class NavigationComponent implements OnInit {
     ngOnInit() {}
 
 }
+*/

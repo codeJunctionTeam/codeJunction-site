@@ -7,7 +7,7 @@ import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
 import { RouterModule } from '@angular/router';
 
 // import { BasicelementsComponent } from './basicelements/basicelements.component';
-import { NavigationComponent } from './navigation/navigation.component';
+// import { NavigationComponent } from './navigation/navigation.component';
 import { TeamSectionComponent } from './teamSection/teamSection.component';
 import { NucleoiconsComponent } from './nucleoicons/nucleoicons.component';
 import { ComponentsComponent } from './components.component';
@@ -29,7 +29,7 @@ import { CarouselComponent } from './carousel/carousel.component';
     declarations: [
         ComponentsComponent,
         // BasicelementsComponent,
-        NavigationComponent,
+        // NavigationComponent,
         TeamSectionComponent,
         NucleoiconsComponent,
         NotificationComponent,
