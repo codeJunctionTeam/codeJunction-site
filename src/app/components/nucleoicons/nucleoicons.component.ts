@@ -1,3 +1,4 @@
+/*
 import { Component, OnInit, Inject, Renderer2, ElementRef, OnDestroy } from '@angular/core';
 
 @Component({
@@ -21,3 +22,4 @@ export class NucleoiconsComponent implements OnInit, OnDestroy {
         navbar.classList.remove('navbar-hidden');
     }
 }
+*/

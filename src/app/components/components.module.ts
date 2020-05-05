@@ -9,7 +9,7 @@ import { RouterModule } from '@angular/router';
 // import { BasicelementsComponent } from './basicelements/basicelements.component';
 // import { NavigationComponent } from './navigation/navigation.component';
 import { TeamSectionComponent } from './teamSection/teamSection.component';
-import { NucleoiconsComponent } from './nucleoicons/nucleoicons.component';
+// import { NucleoiconsComponent } from './nucleoicons/nucleoicons.component';
 import { ComponentsComponent } from './components.component';
 import { NotificationComponent } from './notification/notification.component';
 import { NgbdModalComponent } from './modal/modal.component';
@@ -31,7 +31,7 @@ import { CarouselComponent } from './carousel/carousel.component';
         // BasicelementsComponent,
         // NavigationComponent,
         TeamSectionComponent,
-        NucleoiconsComponent,
+        // NucleoiconsComponent,
         NotificationComponent,
         NgbdModalComponent,
         NgbdModalContent,
