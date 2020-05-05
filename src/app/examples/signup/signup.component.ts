@@ -1,3 +1,4 @@
+/*
 import { Component, OnInit } from '@angular/core';
 import { YoutubeService } from '../../services/thirdParty/youtube.service';
 
@@ -24,3 +25,4 @@ export class SignupComponent implements OnInit {
         });
     }
 }
+*/

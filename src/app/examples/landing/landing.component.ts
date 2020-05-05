@@ -1,3 +1,4 @@
+/*
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -15,3 +16,4 @@ export class LandingComponent implements OnInit {
   ngOnInit() {}
 
 }
+*/
