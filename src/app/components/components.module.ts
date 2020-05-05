@@ -6,7 +6,7 @@ import { NouisliderModule } from 'ng2-nouislider';
 import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
 import { RouterModule } from '@angular/router';
 
-import { BasicelementsComponent } from './basicelements/basicelements.component';
+// import { BasicelementsComponent } from './basicelements/basicelements.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { TeamSectionComponent } from './teamSection/teamSection.component';
 import { NucleoiconsComponent } from './nucleoicons/nucleoicons.component';
@@ -28,7 +28,7 @@ import { CarouselComponent } from './carousel/carousel.component';
     ],
     declarations: [
         ComponentsComponent,
-        BasicelementsComponent,
+        // BasicelementsComponent,
         NavigationComponent,
         TeamSectionComponent,
         NucleoiconsComponent,
