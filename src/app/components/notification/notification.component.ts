@@ -1,3 +1,4 @@
+/*
 import { Input, Component } from '@angular/core';
 
 @Component({
@@ -46,3 +47,4 @@ export interface IAlert {
     message: string;
     icon?: string;
 }
+*/
