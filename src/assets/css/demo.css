@@ -97,13 +97,6 @@
     /*     position: relative; */
 }
 
-.navigation-example {
-    background-image: url('../img/ilya-yakover.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    margin-top: 0;
-}
 
 #notifications {
     background-color: #FFFFFF;
