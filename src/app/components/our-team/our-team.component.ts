@@ -3,10 +3,10 @@ import teamImages from '../../../assets/json/teamCarousel.json';
 
 @Component({
   selector: 'app-carousel',
-  templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.css']
+  templateUrl: './our-team.component.html',
+  styleUrls: ['./our-team.component.css']
 })
-export class CarouselComponent implements OnInit {
+export class OurTeamComponent implements OnInit {
 
   constructor() { }
 
