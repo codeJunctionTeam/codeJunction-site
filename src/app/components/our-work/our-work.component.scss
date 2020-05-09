@@ -1,13 +1,16 @@
 .project {
   margin: 2px 20px;
   width: 18rem;
+
   @media screen and (max-width: 995px) {
     margin: 2px 12px;
   }
+
   @media screen and (max-width: 398px) {
     margin: 2px 5px;
     width: 250px;
   }
+
   @media screen and (max-width: 398px) {
     margin: 2px 5px;
     width: 220px;
