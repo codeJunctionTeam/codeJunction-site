@@ -6,7 +6,7 @@
                 <button type="button" class="slider_button btn btn-danger btn-just-icon" (click)="backward()"><i
                         class="fa fa-angle-left"></i></button>
                 <div class="project card" *ngFor="let project of listedProjects">
-                    <img class="card-img-top" src="../../../assets/img/work/{{project.image}}" alt="Card image cap">
+                    <img class="card-img-top" src="assets/img/work/{{project.image}}" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title"><b>{{project.projectName}}</b>
                             <i *ngIf="project.isWeb" class="fa fa-globe" aria-hidden="true"
