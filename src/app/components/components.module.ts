@@ -12,7 +12,7 @@ import { ComponentsComponent } from './components.component';
 import { NgbdModalComponent } from './modal/modal.component';
 import { NgbdModalContent } from './modal/modal.component';
 import { MemberCardComponent } from './member-card/member-card.component';
-import { CarouselComponent } from './carousel/carousel.component';
+import { OurTeamComponent } from './our-team/our-team.component';
 
 @NgModule({
     imports: [
@@ -29,7 +29,7 @@ import { CarouselComponent } from './carousel/carousel.component';
         NgbdModalComponent,
         NgbdModalContent,
         MemberCardComponent,
-        CarouselComponent
+        OurTeamComponent
     ],
     entryComponents: [NgbdModalContent],
     exports:[ ComponentsComponent ]
