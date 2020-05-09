@@ -13,19 +13,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/carousel/carousel.component.html":
-/*!***************************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/carousel/carousel.component.html ***!
-  \***************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"section team-carousel\" id=\"carousel\">\n    <div class=\"container\">\n        <div class=\"col-md-auto\">\n            <h2 class=\"title\">Our Team</h2>\n        </div>\n        <div class=\"page-carousel col-md-7 ml-auto mr-auto\">\n            <ngb-carousel>\n                <ng-template ngbSlide #teamImg *ngFor=\"let teamPic of teamCarousel\">\n                    <div class=\"teamImg\"> \n                        <img src=\"./assets/img/{{teamPic.image}}\" alt=\"Team gatherings\">\n                        <div class=\"carousel-caption team-carousel-caption\">\n                            <p>{{teamPic.description}}</p>\n                        </div>\n                    </div>\n                </ng-template>\n            </ngb-carousel>\n        </div>\n    </div>\n</div>\n");
-
-/***/ }),
-
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/components.component.html":
 /*!********************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/components.component.html ***!
@@ -35,7 +22,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"wrapper\">\n    <div class=\"page-header section-dark\" style=\"background-image: url('assets/img/antoine-barres.jpg')\">\n        <div class=\"filter\"></div>\n        <div class=\"content-center\">\n            <div class=\"container\">\n                <div class=\"title-brand\">\n                    <div class=\"angular-logo\">\n                        <img src=\"assets/img/logo.png\" alt=\"\">\n                    </div>\n                    <h1 class=\"presentation-title\">codeJunction</h1>\n                </div>\n\n                <h2 class=\"presentation-subtitle text-center\">Think | Search | Build</h2>\n            </div>\n        </div>\n    </div>\n    <div class=\"main\">\n      <team-members></team-members>\n      <app-carousel></app-carousel>\n    </div>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"wrapper\">\n    <div class=\"page-header section-dark\" style=\"background-image: url('assets/img/antoine-barres.jpg')\">\n        <div class=\"filter\"></div>\n        <div class=\"content-center\">\n            <div class=\"container\">\n                <div class=\"title-brand\">\n                    <div class=\"angular-logo\">\n                        <img src=\"assets/img/logo.png\" alt=\"\">\n                    </div>\n                    <h1 class=\"presentation-title\">codeJunction</h1>\n                </div>\n\n                <h2 class=\"presentation-subtitle text-center\">Think | Search | Build</h2>\n            </div>\n        </div>\n    </div>\n    <div class=\"main\">\n      <team-members></team-members>\n      <app-our-team></app-our-team>\n    </div>\n</div>\n");
 
 /***/ }),
 
@@ -62,6 +49,19 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ("<p>You can pass an existing component as content of the modal window. In this case remember to add content component\nas an <code>entryComponents</code> section of your <code>NgModule</code>.</p>\n\n<button class=\"btn btn-outline-danger btn-round\" (click)=\"open()\">Launch demo modal</button>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/our-team/our-team.component.html":
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/our-team/our-team.component.html ***!
+  \***************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"section team-carousel\" id=\"carousel\">\n    <div class=\"container\">\n        <div class=\"col-md-auto\">\n            <h2 class=\"title\">Our Team</h2>\n        </div>\n        <div class=\"page-carousel col-md-7 ml-auto mr-auto\">\n            <ngb-carousel>\n                <ng-template ngbSlide #teamImg *ngFor=\"let teamPic of teamCarousel\">\n                    <div class=\"teamImg\"> \n                        <img src=\"./assets/img/{{teamPic.image}}\" alt=\"Team gatherings\">\n                        <div class=\"carousel-caption team-carousel-caption\">\n                            <p>{{teamPic.description}}</p>\n                        </div>\n                    </div>\n                </ng-template>\n            </ngb-carousel>\n        </div>\n    </div>\n</div>\n");
 
 /***/ }),
 
@@ -379,67 +379,6 @@ var AppRoutingModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/components/carousel/carousel.component.css":
-/*!************************************************************!*\
-  !*** ./src/app/components/carousel/carousel.component.css ***!
-  \************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".team-carousel-caption{\n    display: none;\n}\n\n.team-carousel .teamImg:hover{\n    background-color: black;\n    border-radius: 12px !important;\n}\n\n.team-carousel .teamImg:hover img{\n    opacity: 0.5;\n    cursor: pointer;\n}\n\n.team-carousel .teamImg:hover .team-carousel-caption{\n    display: block;\n}\n\n.team-carousel .teamImg:hover .team-carousel-caption>p{\n    color: white;\n    font-weight: bold;\n    font-size: large;\n}\n\n@media screen and (max-width:1024px){\n    .team-carousel img{\n        height: 80%;\n    }\n\n    .team-carousel .teamImg:hover .team-carousel-caption{\n        padding-bottom: 20px !important;\n        text-align: center;\n    }\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jYXJvdXNlbC9jYXJvdXNlbC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksYUFBYTtBQUNqQjs7QUFFQTtJQUNJLHVCQUF1QjtJQUN2Qiw4QkFBOEI7QUFDbEM7O0FBRUE7SUFDSSxZQUFZO0lBQ1osZUFBZTtBQUNuQjs7QUFFQTtJQUNJLGNBQWM7QUFDbEI7O0FBRUE7SUFDSSxZQUFZO0lBQ1osaUJBQWlCO0lBQ2pCLGdCQUFnQjtBQUNwQjs7QUFFQTtJQUNJO1FBQ0ksV0FBVztJQUNmOztJQUVBO1FBQ0ksK0JBQStCO1FBQy9CLGtCQUFrQjtJQUN0QjtBQUNKIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9jYXJvdXNlbC9jYXJvdXNlbC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnRlYW0tY2Fyb3VzZWwtY2FwdGlvbntcbiAgICBkaXNwbGF5OiBub25lO1xufVxuXG4udGVhbS1jYXJvdXNlbCAudGVhbUltZzpob3ZlcntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcbiAgICBib3JkZXItcmFkaXVzOiAxMnB4ICFpbXBvcnRhbnQ7XG59XG5cbi50ZWFtLWNhcm91c2VsIC50ZWFtSW1nOmhvdmVyIGltZ3tcbiAgICBvcGFjaXR5OiAwLjU7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufVxuXG4udGVhbS1jYXJvdXNlbCAudGVhbUltZzpob3ZlciAudGVhbS1jYXJvdXNlbC1jYXB0aW9ue1xuICAgIGRpc3BsYXk6IGJsb2NrO1xufVxuXG4udGVhbS1jYXJvdXNlbCAudGVhbUltZzpob3ZlciAudGVhbS1jYXJvdXNlbC1jYXB0aW9uPnB7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgIGZvbnQtc2l6ZTogbGFyZ2U7XG59XG5cbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6MTAyNHB4KXtcbiAgICAudGVhbS1jYXJvdXNlbCBpbWd7XG4gICAgICAgIGhlaWdodDogODAlO1xuICAgIH1cblxuICAgIC50ZWFtLWNhcm91c2VsIC50ZWFtSW1nOmhvdmVyIC50ZWFtLWNhcm91c2VsLWNhcHRpb257XG4gICAgICAgIHBhZGRpbmctYm90dG9tOiAyMHB4ICFpbXBvcnRhbnQ7XG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICB9XG59XG4iXX0= */");
-
-/***/ }),
-
-/***/ "./src/app/components/carousel/carousel.component.ts":
-/*!***********************************************************!*\
-  !*** ./src/app/components/carousel/carousel.component.ts ***!
-  \***********************************************************/
-/*! exports provided: CarouselComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CarouselComponent", function() { return CarouselComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
-/* harmony import */ var _assets_json_teamCarousel_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../assets/json/teamCarousel.json */ "./src/assets/json/teamCarousel.json");
-var _assets_json_teamCarousel_json__WEBPACK_IMPORTED_MODULE_1___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../../assets/json/teamCarousel.json */ "./src/assets/json/teamCarousel.json", 1);
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
-  return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-
-
-var CarouselComponent = /** @class */ (function () {
-    function CarouselComponent() {
-        this.teamCarousel = _assets_json_teamCarousel_json__WEBPACK_IMPORTED_MODULE_1__;
-    }
-    CarouselComponent.prototype.ngOnInit = function () {
-    };
-    CarouselComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-carousel',
-            template: __importDefault(__webpack_require__(/*! raw-loader!./carousel.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/carousel/carousel.component.html")).default,
-            styles: [__importDefault(__webpack_require__(/*! ./carousel.component.css */ "./src/app/components/carousel/carousel.component.css")).default]
-        }),
-        __metadata("design:paramtypes", [])
-    ], CarouselComponent);
-    return CarouselComponent;
-}());
-
-
-
-/***/ }),
-
 /***/ "./src/app/components/components.component.ts":
 /*!****************************************************!*\
   !*** ./src/app/components/components.component.ts ***!
@@ -532,7 +471,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components.component */ "./src/app/components/components.component.ts");
 /* harmony import */ var _modal_modal_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modal/modal.component */ "./src/app/components/modal/modal.component.ts");
 /* harmony import */ var _member_card_member_card_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./member-card/member-card.component */ "./src/app/components/member-card/member-card.component.ts");
-/* harmony import */ var _carousel_carousel_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./carousel/carousel.component */ "./src/app/components/carousel/carousel.component.ts");
+/* harmony import */ var _our_team_our_team_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./our-team/our-team.component */ "./src/app/components/our-team/our-team.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -574,7 +513,7 @@ var ComponentsModule = /** @class */ (function () {
                 _modal_modal_component__WEBPACK_IMPORTED_MODULE_9__["NgbdModalComponent"],
                 _modal_modal_component__WEBPACK_IMPORTED_MODULE_9__["NgbdModalContent"],
                 _member_card_member_card_component__WEBPACK_IMPORTED_MODULE_10__["MemberCardComponent"],
-                _carousel_carousel_component__WEBPACK_IMPORTED_MODULE_11__["CarouselComponent"]
+                _our_team_our_team_component__WEBPACK_IMPORTED_MODULE_11__["OurTeamComponent"]
             ],
             entryComponents: [_modal_modal_component__WEBPACK_IMPORTED_MODULE_9__["NgbdModalContent"]],
             exports: [_components_component__WEBPACK_IMPORTED_MODULE_8__["ComponentsComponent"]]
@@ -748,6 +687,67 @@ var NgbdModalComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_1__["NgbModal"]])
     ], NgbdModalComponent);
     return NgbdModalComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/our-team/our-team.component.css":
+/*!************************************************************!*\
+  !*** ./src/app/components/our-team/our-team.component.css ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".team-carousel-caption{\n    display: none;\n}\n\n.team-carousel .teamImg:hover{\n    background-color: black;\n    border-radius: 12px !important;\n}\n\n.team-carousel .teamImg:hover img{\n    opacity: 0.5;\n    cursor: pointer;\n}\n\n.team-carousel .teamImg:hover .team-carousel-caption{\n    display: block;\n}\n\n.team-carousel .teamImg:hover .team-carousel-caption>p{\n    color: white;\n    font-weight: bold;\n    font-size: large;\n}\n\n@media screen and (max-width:1024px){\n    .team-carousel img{\n        height: 80%;\n    }\n\n    .team-carousel .teamImg:hover .team-carousel-caption{\n        padding-bottom: 20px !important;\n        text-align: center;\n    }\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9vdXItdGVhbS9vdXItdGVhbS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksYUFBYTtBQUNqQjs7QUFFQTtJQUNJLHVCQUF1QjtJQUN2Qiw4QkFBOEI7QUFDbEM7O0FBRUE7SUFDSSxZQUFZO0lBQ1osZUFBZTtBQUNuQjs7QUFFQTtJQUNJLGNBQWM7QUFDbEI7O0FBRUE7SUFDSSxZQUFZO0lBQ1osaUJBQWlCO0lBQ2pCLGdCQUFnQjtBQUNwQjs7QUFFQTtJQUNJO1FBQ0ksV0FBVztJQUNmOztJQUVBO1FBQ0ksK0JBQStCO1FBQy9CLGtCQUFrQjtJQUN0QjtBQUNKIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9vdXItdGVhbS9vdXItdGVhbS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnRlYW0tY2Fyb3VzZWwtY2FwdGlvbntcbiAgICBkaXNwbGF5OiBub25lO1xufVxuXG4udGVhbS1jYXJvdXNlbCAudGVhbUltZzpob3ZlcntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcbiAgICBib3JkZXItcmFkaXVzOiAxMnB4ICFpbXBvcnRhbnQ7XG59XG5cbi50ZWFtLWNhcm91c2VsIC50ZWFtSW1nOmhvdmVyIGltZ3tcbiAgICBvcGFjaXR5OiAwLjU7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufVxuXG4udGVhbS1jYXJvdXNlbCAudGVhbUltZzpob3ZlciAudGVhbS1jYXJvdXNlbC1jYXB0aW9ue1xuICAgIGRpc3BsYXk6IGJsb2NrO1xufVxuXG4udGVhbS1jYXJvdXNlbCAudGVhbUltZzpob3ZlciAudGVhbS1jYXJvdXNlbC1jYXB0aW9uPnB7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgIGZvbnQtc2l6ZTogbGFyZ2U7XG59XG5cbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6MTAyNHB4KXtcbiAgICAudGVhbS1jYXJvdXNlbCBpbWd7XG4gICAgICAgIGhlaWdodDogODAlO1xuICAgIH1cblxuICAgIC50ZWFtLWNhcm91c2VsIC50ZWFtSW1nOmhvdmVyIC50ZWFtLWNhcm91c2VsLWNhcHRpb257XG4gICAgICAgIHBhZGRpbmctYm90dG9tOiAyMHB4ICFpbXBvcnRhbnQ7XG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICB9XG59XG4iXX0= */");
+
+/***/ }),
+
+/***/ "./src/app/components/our-team/our-team.component.ts":
+/*!***********************************************************!*\
+  !*** ./src/app/components/our-team/our-team.component.ts ***!
+  \***********************************************************/
+/*! exports provided: OurTeamComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OurTeamComponent", function() { return OurTeamComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
+/* harmony import */ var _assets_json_teamCarousel_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../assets/json/teamCarousel.json */ "./src/assets/json/teamCarousel.json");
+var _assets_json_teamCarousel_json__WEBPACK_IMPORTED_MODULE_1___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../../assets/json/teamCarousel.json */ "./src/assets/json/teamCarousel.json", 1);
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
+  return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+
+
+var OurTeamComponent = /** @class */ (function () {
+    function OurTeamComponent() {
+        this.teamCarousel = _assets_json_teamCarousel_json__WEBPACK_IMPORTED_MODULE_1__;
+    }
+    OurTeamComponent.prototype.ngOnInit = function () {
+    };
+    OurTeamComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-our-team',
+            template: __importDefault(__webpack_require__(/*! raw-loader!./our-team.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/our-team/our-team.component.html")).default,
+            styles: [__importDefault(__webpack_require__(/*! ./our-team.component.css */ "./src/app/components/our-team/our-team.component.css")).default]
+        }),
+        __metadata("design:paramtypes", [])
+    ], OurTeamComponent);
+    return OurTeamComponent;
 }());
 
 

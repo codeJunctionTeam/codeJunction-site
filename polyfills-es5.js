@@ -320,7 +320,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports) {
 
 /**
- * @license Angular v9.1.4
+ * @license Angular v9.1.6
  * (c) 2010-2020 Google LLC. https://angular.io/
  * License: MIT
  */
