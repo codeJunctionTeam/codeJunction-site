@@ -14,6 +14,7 @@ import { NgbdModalContent } from './modal/modal.component';
 import { MemberCardComponent } from './member-card/member-card.component';
 import { OurWorkComponent } from './our-work/our-work.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { ProjectCardComponent } from './project-card/project-card.component';
 
 @NgModule({
     imports: [
@@ -31,6 +32,7 @@ import { CarouselComponent } from './carousel/carousel.component';
         NgbdModalContent,
         MemberCardComponent,
         OurWorkComponent,
+        ProjectCardComponent,
         CarouselComponent
     ],
     entryComponents: [NgbdModalContent],

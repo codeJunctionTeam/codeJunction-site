@@ -1,5 +1,7 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import projects from '../../../assets/json/projects.json';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { ProjectCardComponent } from '../project-card/project-card.component';
 
 
 @Component({
@@ -12,6 +14,9 @@ export class OurWorkComponent implements OnInit {
   private displayCount;
   public listedProjects;
   private clicker = 0;
+
+  constructor(private modalService: NgbModal) { }
+
   @HostListener('window:resize', ['$event'])
   onResize(event) {
     this.adjustScreen(event.target.innerWidth);
@@ -19,6 +24,11 @@ export class OurWorkComponent implements OnInit {
 
   ngOnInit() {
     this.adjustScreen(window.innerWidth);
+  }
+
+  showProjectCard(data) {
+    const card = new ProjectCardComponent(this.modalService);
+    card.open(data);
   }
 
   foward() {
@@ -36,17 +46,15 @@ export class OurWorkComponent implements OnInit {
   }
 
   adjustScreen(width) {
-    if (width < 750) {
+    if (width <= 767) {
       this.displayCount = 1;
-    } else if (width < 800) {
+    } else if (width < 770) {
       this.displayCount = 2;
     }
     else if (width < 1300) {
       this.displayCount = 2;
-    }else if (width < 1700) {
+    } else {
       this.displayCount = 3;
-    }else{
-      this.displayCount = 4;
     }
     this.listedProjects = projects.slice(0, this.displayCount);
   }
