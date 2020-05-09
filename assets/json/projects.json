@@ -1,0 +1,43 @@
+[
+  {
+    "projectName": "Sertum",
+    "image": "sertum.jpg",
+    "largeDescription": "Sertum is a robot which can do both cleaning and serving on its own. It can be operated manually as well as automatically. In the automatic mode, Sertum can detect and avoid barriers and do the cleaning process on its own. For obstacle detection, an ultrasonic sensor is used. In restaurants, Sertum can be used to deliver the order to the relevant table number. The cleaning process is done using water and three main cleaners. A built in fan is also used. During the cleaning process, the water flow is controlled by a solenoid valve. In the serving process, the cook needs to place the ordered meal on Sertum's platform and provide the table number to be delivered to.",
+    "description": "Sertum is a robot which can do both cleaning and serving on its own."
+  },
+  {
+    "projectName": "Cake-a-licious Website",
+    "image": "Cake-a-licious.png",
+    "largeDescription": "codeJunction team proudly designed a WordPress website for cake-a-licious sweets shop in Moratuwa Sri Lanka. This website contains a gallery page, a contact us page, an Instagram and Facebook plugin has been embedded in order to see the latest posts on the website.",
+    "description": "The official website of cake-a-licious cake store.",
+    "isWeb": "true"
+  },
+  {
+    "projectName": "Ajith motors Entry System",
+    "image": "ajithMotors.jpg",
+    "largeDescription": "This is a Java application to manage Ajith Motors daily transactions, keep company records etc. There are primarily two interfaces for two main roles. One role is the admin and the other role is the staff. The cashier can use his/her account and according to the type of account (staff/admin) the correct interface will be displayed. Admins can view all the income, expenditure, during a time period which they put as a filter.",
+    "description": "A data entry managment system deployed in Ajith motors car sale."
+  },
+  {
+    "projectName": "Fhix 45 Website",
+    "image": "fhix.png",
+    "largeDescription": "codeJunction created a Wordpress website for Fhix 45 Gym at Kollupitiya Sri Lanka. This website consisted of a home page with sections, a blog page, a gallery page, join us popup card and a contact us form. Also, this website has an Instagram and Facebook plugins embedded to view the latest Instagram and Facebook posts.",
+    "description": "The official website of Fhix 45 gymnasium.",
+    "isWeb": "true"
+  },
+  {
+    "projectName": "codeJunction Website",
+    "image": "codeJuctionWebsite.png",
+    "description": "The official website of CodeJunction. (Open Source ❤️)",
+    "largeDescription": "This is the official website 0f codeJunction. An open-source Angular based project maintained by the codeJunction crew. We welcome everyone to contribute in this project. To get started please visit our Github repository.",
+    "github": "https://github.com/codeJunctionTeam/codeJunction-site",
+    "isWeb": "true"
+  },
+  {
+    "projectName": "Fire call",
+    "image": "firecall.jpg",
+    "description": "A sound wave classifying tool which analyse audio content. (Open Source ❤️)",
+    "largeDescription": "Fire call is an open-source project which is developed using python and flask framework. This project aims to classify sound waves through analysing audio content. We welcome everyone to contribute in this project. To get started please visit our Github repository.",
+    "github": "https://github.com/codeJunctionTeam/fire-call"
+  }
+]

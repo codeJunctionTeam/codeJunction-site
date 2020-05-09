@@ -22,7 +22,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"wrapper\">\n    <div class=\"page-header section-dark\" style=\"background-image: url('assets/img/antoine-barres.jpg')\">\n        <div class=\"filter\"></div>\n        <div class=\"content-center\">\n            <div class=\"container\">\n                <div class=\"title-brand\">\n                    <div class=\"angular-logo\">\n                        <img src=\"assets/img/logo.png\" alt=\"\">\n                    </div>\n                    <h1 class=\"presentation-title\">codeJunction</h1>\n                </div>\n\n                <h2 class=\"presentation-subtitle text-center\">Think | Search | Build</h2>\n            </div>\n        </div>\n    </div>\n    <div class=\"main\">\n      <team-members></team-members>\n      <app-our-team></app-our-team>\n    </div>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"wrapper\">\n    <div class=\"page-header section-dark\" style=\"background-image: url('assets/img/antoine-barres.jpg')\">\n        <div class=\"filter\"></div>\n        <div class=\"content-center\">\n            <div class=\"container\">\n                <div class=\"title-brand\">\n                    <div class=\"angular-logo\">\n                        <img src=\"assets/img/logo.png\" alt=\"\">\n                    </div>\n                    <h1 class=\"presentation-title\">codeJunction</h1>\n                </div>\n\n                <h2 class=\"presentation-subtitle text-center\">Think | Search | Build</h2>\n            </div>\n        </div>\n    </div>\n    <div class=\"main\">\n        <app-our-work></app-our-work>\n        <team-members></team-members>\n        <app-our-team></app-our-team>\n    </div>\n</div>\n");
 
 /***/ }),
 
@@ -62,6 +62,32 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"section team-carousel\" id=\"carousel\">\n    <div class=\"container\">\n        <div class=\"col-md-auto\">\n            <h2 class=\"title\">Our Team</h2>\n        </div>\n        <div class=\"page-carousel col-md-7 ml-auto mr-auto\">\n            <ngb-carousel>\n                <ng-template ngbSlide #teamImg *ngFor=\"let teamPic of teamCarousel\">\n                    <div class=\"teamImg\"> \n                        <img src=\"./assets/img/{{teamPic.image}}\" alt=\"Team gatherings\">\n                        <div class=\"carousel-caption team-carousel-caption\">\n                            <p>{{teamPic.description}}</p>\n                        </div>\n                    </div>\n                </ng-template>\n            </ngb-carousel>\n        </div>\n    </div>\n</div>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/our-work/our-work.component.html":
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/our-work/our-work.component.html ***!
+  \***************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"section\">\n    <div class=\"container\">\n        <h2>Our Work</h2>\n        <div class=\"work-section\">\n            <div class=\"row justify-content-center\">\n                <button type=\"button\" class=\"slider_button btn btn-danger btn-just-icon\" (click)=\"backward()\"><i\n                        class=\"fa fa-angle-left\"></i></button>\n                <div class=\"project card\" *ngFor=\"let project of listedProjects\">\n                    <img class=\"card-img-top\" src=\"../../../assets/img/work/{{project.image}}\" alt=\"Card image cap\">\n                    <div class=\"card-body\">\n                        <h5 class=\"card-title\"><b>{{project.projectName}}</b>\n                            <i *ngIf=\"project.isWeb\" class=\"fa fa-globe\" aria-hidden=\"true\"\n                                style=\"padding-left:10px;\"></i> </h5>\n                        <p class=\"card-text\" style=\"text-align: justify; font-size: 12px;\">{{project.description}}</p>\n                        <button class=\"btn btn-default\" (click)=\"showProjectCard({\n                                image:project.image,\n                                description: project.largeDescription,\n                                name: project.projectName,\n                                github: project.github|| null})\">\n                            See more</button>\n                    </div>\n                </div>\n                <button type=\"button\" class=\"slider_button btn btn-danger btn-just-icon\" (click)=\"foward()\"><i\n                        class=\"fa fa-angle-right\"></i></button>\n            </div>\n        </div>\n    </div>\n</div>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/project-card/project-card.component.html":
+/*!***********************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/project-card/project-card.component.html ***!
+  \***********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"project-modal\">\n  <div class=\"modal-header no-border-header\">\n    <h5 class=\"modal-title text-center\">&nbsp;</h5>\n  </div>\n  <div class=\"modal-body\">\n    <h5 class=\"modal-title text-center\">{{data.name}}</h5>\n    <img src=\"assets/img/work/{{data.image}}\" class=\"img-rounded\" style=\"height:60%;width:60%;\">\n    <div class=\"project-description\">{{data.description}}</div>\n    <div class=\"row justify-content-center social-media-links\">\n      <div *ngIf=\"data.github\" class=\"col-xs-4 social-link\">\n        <a rel=\"tooltip\" title=\"Github\" data-placement=\"bottom\" href=\"{{data.github}}\" target=\"_blank\">\n          <i class=\"fa fa-github-square\"></i>\n        </a>\n      </div>\n    </div>\n  </div>\n  <div class=\"modal-footer no-border-footer\">\n    <div class=\"project-close mx-auto\">\n      <button type=\"button\" #closebutton class=\"btn btn btn-outline-primary btn-round\" data-dismiss=\"modal\" (click)=\"close()\">Close</button>\n    </div>\n  </div>\n</div>\n");
 
 /***/ }),
 
@@ -471,7 +497,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components.component */ "./src/app/components/components.component.ts");
 /* harmony import */ var _modal_modal_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modal/modal.component */ "./src/app/components/modal/modal.component.ts");
 /* harmony import */ var _member_card_member_card_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./member-card/member-card.component */ "./src/app/components/member-card/member-card.component.ts");
-/* harmony import */ var _our_team_our_team_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./our-team/our-team.component */ "./src/app/components/our-team/our-team.component.ts");
+/* harmony import */ var _our_work_our_work_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./our-work/our-work.component */ "./src/app/components/our-work/our-work.component.ts");
+/* harmony import */ var _project_card_project_card_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./project-card/project-card.component */ "./src/app/components/project-card/project-card.component.ts");
+/* harmony import */ var _our_team_our_team_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./our-team/our-team.component */ "./src/app/components/our-team/our-team.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -481,6 +509,8 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
   return (mod && mod.__esModule) ? mod : { "default": mod };
 };
+
+
 
 
 
@@ -513,7 +543,9 @@ var ComponentsModule = /** @class */ (function () {
                 _modal_modal_component__WEBPACK_IMPORTED_MODULE_9__["NgbdModalComponent"],
                 _modal_modal_component__WEBPACK_IMPORTED_MODULE_9__["NgbdModalContent"],
                 _member_card_member_card_component__WEBPACK_IMPORTED_MODULE_10__["MemberCardComponent"],
-                _our_team_our_team_component__WEBPACK_IMPORTED_MODULE_11__["OurTeamComponent"]
+                _our_work_our_work_component__WEBPACK_IMPORTED_MODULE_11__["OurWorkComponent"],
+                _project_card_project_card_component__WEBPACK_IMPORTED_MODULE_12__["ProjectCardComponent"],
+                _our_team_our_team_component__WEBPACK_IMPORTED_MODULE_13__["OurTeamComponent"]
             ],
             entryComponents: [_modal_modal_component__WEBPACK_IMPORTED_MODULE_9__["NgbdModalContent"]],
             exports: [_components_component__WEBPACK_IMPORTED_MODULE_8__["ComponentsComponent"]]
@@ -748,6 +780,192 @@ var OurTeamComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], OurTeamComponent);
     return OurTeamComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/our-work/our-work.component.scss":
+/*!*************************************************************!*\
+  !*** ./src/app/components/our-work/our-work.component.scss ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".project {\n  margin: 2px 20px;\n  width: 18rem;\n}\n@media screen and (max-width: 995px) {\n  .project {\n    margin: 2px 12px;\n  }\n}\n@media screen and (max-width: 398px) {\n  .project {\n    margin: 2px 5px;\n    width: 250px;\n  }\n}\n@media screen and (max-width: 398px) {\n  .project {\n    margin: 2px 5px;\n    width: 220px;\n  }\n}\n.slider_button {\n  display: block;\n  margin-bottom: auto;\n  margin-top: auto;\n}\n.work-section {\n  margin-top: 5vh;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3J1bm5lci93b3JrL2NvZGVKdW5jdGlvbi1zaXRlL2NvZGVKdW5jdGlvbi1zaXRlL3NyYy9hcHAvY29tcG9uZW50cy9vdXItd29yay9vdXItd29yay5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvY29tcG9uZW50cy9vdXItd29yay9vdXItd29yay5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGdCQUFBO0VBQ0EsWUFBQTtBQ0NGO0FEQ0U7RUFKRjtJQUtJLGdCQUFBO0VDRUY7QUFDRjtBREFFO0VBUkY7SUFTSSxlQUFBO0lBQ0EsWUFBQTtFQ0dGO0FBQ0Y7QURERTtFQWJGO0lBY0ksZUFBQTtJQUNBLFlBQUE7RUNJRjtBQUNGO0FEREE7RUFDRSxjQUFBO0VBQ0EsbUJBQUE7RUFDQSxnQkFBQTtBQ0lGO0FEREE7RUFDRSxlQUFBO0FDSUYiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL291ci13b3JrL291ci13b3JrLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnByb2plY3Qge1xuICBtYXJnaW46IDJweCAyMHB4O1xuICB3aWR0aDogMThyZW07XG5cbiAgQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogOTk1cHgpIHtcbiAgICBtYXJnaW46IDJweCAxMnB4O1xuICB9XG5cbiAgQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogMzk4cHgpIHtcbiAgICBtYXJnaW46IDJweCA1cHg7XG4gICAgd2lkdGg6IDI1MHB4O1xuICB9XG5cbiAgQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogMzk4cHgpIHtcbiAgICBtYXJnaW46IDJweCA1cHg7XG4gICAgd2lkdGg6IDIyMHB4O1xuICB9XG59XG5cbi5zbGlkZXJfYnV0dG9uIHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIG1hcmdpbi1ib3R0b206IGF1dG87XG4gIG1hcmdpbi10b3A6IGF1dG87XG59XG5cbi53b3JrLXNlY3Rpb24ge1xuICBtYXJnaW4tdG9wOiA1dmg7XG59XG4iLCIucHJvamVjdCB7XG4gIG1hcmdpbjogMnB4IDIwcHg7XG4gIHdpZHRoOiAxOHJlbTtcbn1cbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDk5NXB4KSB7XG4gIC5wcm9qZWN0IHtcbiAgICBtYXJnaW46IDJweCAxMnB4O1xuICB9XG59XG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiAzOThweCkge1xuICAucHJvamVjdCB7XG4gICAgbWFyZ2luOiAycHggNXB4O1xuICAgIHdpZHRoOiAyNTBweDtcbiAgfVxufVxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogMzk4cHgpIHtcbiAgLnByb2plY3Qge1xuICAgIG1hcmdpbjogMnB4IDVweDtcbiAgICB3aWR0aDogMjIwcHg7XG4gIH1cbn1cblxuLnNsaWRlcl9idXR0b24ge1xuICBkaXNwbGF5OiBibG9jaztcbiAgbWFyZ2luLWJvdHRvbTogYXV0bztcbiAgbWFyZ2luLXRvcDogYXV0bztcbn1cblxuLndvcmstc2VjdGlvbiB7XG4gIG1hcmdpbi10b3A6IDV2aDtcbn0iXX0= */");
+
+/***/ }),
+
+/***/ "./src/app/components/our-work/our-work.component.ts":
+/*!***********************************************************!*\
+  !*** ./src/app/components/our-work/our-work.component.ts ***!
+  \***********************************************************/
+/*! exports provided: OurWorkComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OurWorkComponent", function() { return OurWorkComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
+/* harmony import */ var _assets_json_projects_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../assets/json/projects.json */ "./src/assets/json/projects.json");
+var _assets_json_projects_json__WEBPACK_IMPORTED_MODULE_1___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../../assets/json/projects.json */ "./src/assets/json/projects.json", 1);
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm5/ng-bootstrap.js");
+/* harmony import */ var _project_card_project_card_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../project-card/project-card.component */ "./src/app/components/project-card/project-card.component.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
+  return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+
+
+
+
+var OurWorkComponent = /** @class */ (function () {
+    function OurWorkComponent(modalService) {
+        this.modalService = modalService;
+        this.clicker = 0;
+    }
+    OurWorkComponent.prototype.onResize = function (event) {
+        this.adjustScreen(event.target.innerWidth);
+    };
+    OurWorkComponent.prototype.ngOnInit = function () {
+        this.adjustScreen(window.innerWidth);
+    };
+    OurWorkComponent.prototype.showProjectCard = function (data) {
+        var card = new _project_card_project_card_component__WEBPACK_IMPORTED_MODULE_3__["ProjectCardComponent"](this.modalService);
+        card.open(data);
+    };
+    OurWorkComponent.prototype.foward = function () {
+        if (this.clicker < _assets_json_projects_json__WEBPACK_IMPORTED_MODULE_1__.length - this.displayCount) {
+            this.clicker++;
+            this.listedProjects = _assets_json_projects_json__WEBPACK_IMPORTED_MODULE_1__.slice(0 + this.clicker, this.displayCount + this.clicker);
+        }
+    };
+    OurWorkComponent.prototype.backward = function () {
+        if (this.clicker > 0) {
+            this.clicker--;
+            this.listedProjects = _assets_json_projects_json__WEBPACK_IMPORTED_MODULE_1__.slice(0 + this.clicker, this.displayCount + this.clicker);
+        }
+    };
+    OurWorkComponent.prototype.adjustScreen = function (width) {
+        if (width <= 767) {
+            this.displayCount = 1;
+        }
+        else if (width < 770) {
+            this.displayCount = 2;
+        }
+        else if (width < 1300) {
+            this.displayCount = 2;
+        }
+        else {
+            this.displayCount = 3;
+        }
+        this.listedProjects = _assets_json_projects_json__WEBPACK_IMPORTED_MODULE_1__.slice(0, this.displayCount);
+    };
+    OurWorkComponent.ctorParameters = function () { return [
+        { type: _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_2__["NgbModal"] }
+    ]; };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["HostListener"])('window:resize', ['$event']),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", [Object]),
+        __metadata("design:returntype", void 0)
+    ], OurWorkComponent.prototype, "onResize", null);
+    OurWorkComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-our-work',
+            template: __importDefault(__webpack_require__(/*! raw-loader!./our-work.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/our-work/our-work.component.html")).default,
+            styles: [__importDefault(__webpack_require__(/*! ./our-work.component.scss */ "./src/app/components/our-work/our-work.component.scss")).default]
+        }),
+        __metadata("design:paramtypes", [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_2__["NgbModal"]])
+    ], OurWorkComponent);
+    return OurWorkComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/project-card/project-card.component.scss":
+/*!*********************************************************************!*\
+  !*** ./src/app/components/project-card/project-card.component.scss ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".project-modal {\n  background-color: #ffffff;\n  border-radius: 5px;\n}\n\n.project-modal .close {\n  outline: none !important;\n}\n\n.modal-body {\n  text-align: center;\n}\n\n.modal-footer {\n  padding-bottom: 10px;\n}\n\n.modal-title {\n  font-weight: bold;\n}\n\n.project-description {\n  text-align: justify;\n  margin-top: 10px;\n}\n\n.modal-body .social-media-links {\n  margin-top: 10px;\n}\n\n.social-link {\n  padding: 1%;\n}\n\n.social-link .fa {\n  color: #000000;\n  font-size: large;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3J1bm5lci93b3JrL2NvZGVKdW5jdGlvbi1zaXRlL2NvZGVKdW5jdGlvbi1zaXRlL3NyYy9hcHAvY29tcG9uZW50cy9wcm9qZWN0LWNhcmQvcHJvamVjdC1jYXJkLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9jb21wb25lbnRzL3Byb2plY3QtY2FyZC9wcm9qZWN0LWNhcmQuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSx5QkFBQTtFQUNBLGtCQUFBO0FDQ0Y7O0FERUE7RUFDRSx3QkFBQTtBQ0NGOztBREVBO0VBQ0Usa0JBQUE7QUNDRjs7QURFQTtFQUNFLG9CQUFBO0FDQ0Y7O0FERUE7RUFDRSxpQkFBQTtBQ0NGOztBREVBO0VBQ0UsbUJBQUE7RUFDQSxnQkFBQTtBQ0NGOztBREVBO0VBQ0UsZ0JBQUE7QUNDRjs7QURFQTtFQUNFLFdBQUE7QUNDRjs7QURFQTtFQUNFLGNBQUE7RUFDQSxnQkFBQTtBQ0NGIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9wcm9qZWN0LWNhcmQvcHJvamVjdC1jYXJkLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnByb2plY3QtbW9kYWwge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmZmZmO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG59XG5cbi5wcm9qZWN0LW1vZGFsIC5jbG9zZSB7XG4gIG91dGxpbmU6IG5vbmUgIWltcG9ydGFudDtcbn1cblxuLm1vZGFsLWJvZHkge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5tb2RhbC1mb290ZXIge1xuICBwYWRkaW5nLWJvdHRvbTogMTBweDtcbn1cblxuLm1vZGFsLXRpdGxlIHtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG59XG5cbi5wcm9qZWN0LWRlc2NyaXB0aW9uIHtcbiAgdGV4dC1hbGlnbjoganVzdGlmeTtcbiAgbWFyZ2luLXRvcDogMTBweDtcbn1cblxuLm1vZGFsLWJvZHkgLnNvY2lhbC1tZWRpYS1saW5rcyB7XG4gIG1hcmdpbi10b3A6IDEwcHg7XG59XG5cbi5zb2NpYWwtbGluayB7XG4gIHBhZGRpbmc6IDElO1xufVxuXG4uc29jaWFsLWxpbmsgLmZhIHtcbiAgY29sb3I6ICMwMDAwMDA7XG4gIGZvbnQtc2l6ZTogbGFyZ2U7XG59XG4iLCIucHJvamVjdC1tb2RhbCB7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmZmZmY7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbn1cblxuLnByb2plY3QtbW9kYWwgLmNsb3NlIHtcbiAgb3V0bGluZTogbm9uZSAhaW1wb3J0YW50O1xufVxuXG4ubW9kYWwtYm9keSB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLm1vZGFsLWZvb3RlciB7XG4gIHBhZGRpbmctYm90dG9tOiAxMHB4O1xufVxuXG4ubW9kYWwtdGl0bGUge1xuICBmb250LXdlaWdodDogYm9sZDtcbn1cblxuLnByb2plY3QtZGVzY3JpcHRpb24ge1xuICB0ZXh0LWFsaWduOiBqdXN0aWZ5O1xuICBtYXJnaW4tdG9wOiAxMHB4O1xufVxuXG4ubW9kYWwtYm9keSAuc29jaWFsLW1lZGlhLWxpbmtzIHtcbiAgbWFyZ2luLXRvcDogMTBweDtcbn1cblxuLnNvY2lhbC1saW5rIHtcbiAgcGFkZGluZzogMSU7XG59XG5cbi5zb2NpYWwtbGluayAuZmEge1xuICBjb2xvcjogIzAwMDAwMDtcbiAgZm9udC1zaXplOiBsYXJnZTtcbn0iXX0= */");
+
+/***/ }),
+
+/***/ "./src/app/components/project-card/project-card.component.ts":
+/*!*******************************************************************!*\
+  !*** ./src/app/components/project-card/project-card.component.ts ***!
+  \*******************************************************************/
+/*! exports provided: ProjectCardComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProjectCardComponent", function() { return ProjectCardComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm5/ng-bootstrap.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
+  return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+
+
+var ProjectCardComponent = /** @class */ (function () {
+    function ProjectCardComponent(modalService) {
+        this.modalService = modalService;
+    }
+    ProjectCardComponent_1 = ProjectCardComponent;
+    ProjectCardComponent.prototype.ngOnInit = function () { };
+    ProjectCardComponent.prototype.open = function (data) {
+        var modalRef = this.modalService.open(ProjectCardComponent_1);
+        modalRef.componentInstance.data = data;
+        modalRef.componentInstance.activeModal = modalRef;
+    };
+    ProjectCardComponent.prototype.close = function () {
+        this.activeModal.close();
+    };
+    var ProjectCardComponent_1;
+    ProjectCardComponent.ctorParameters = function () { return [
+        { type: _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_1__["NgbModal"] }
+    ]; };
+    ProjectCardComponent = ProjectCardComponent_1 = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-project-card',
+            template: __importDefault(__webpack_require__(/*! raw-loader!./project-card.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/project-card/project-card.component.html")).default,
+            styles: [__importDefault(__webpack_require__(/*! ./project-card.component.scss */ "./src/app/components/project-card/project-card.component.scss")).default]
+        }),
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'project-card-component',
+            template: __importDefault(__webpack_require__(/*! raw-loader!./project-card.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/project-card/project-card.component.html")).default
+        }),
+        __metadata("design:paramtypes", [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_1__["NgbModal"]])
+    ], ProjectCardComponent);
+    return ProjectCardComponent;
 }());
 
 
@@ -1003,6 +1221,17 @@ var NavbarComponent = /** @class */ (function () {
 }());
 
 
+
+/***/ }),
+
+/***/ "./src/assets/json/projects.json":
+/*!***************************************!*\
+  !*** ./src/assets/json/projects.json ***!
+  \***************************************/
+/*! exports provided: 0, 1, 2, 3, 4, 5, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"projectName\":\"Sertum\",\"image\":\"sertum.jpg\",\"largeDescription\":\"Sertum is a robot which can do both cleaning and serving on its own. It can be operated manually as well as automatically. In the automatic mode, Sertum can detect and avoid barriers and do the cleaning process on its own. For obstacle detection, an ultrasonic sensor is used. In restaurants, Sertum can be used to deliver the order to the relevant table number. The cleaning process is done using water and three main cleaners. A built in fan is also used. During the cleaning process, the water flow is controlled by a solenoid valve. In the serving process, the cook needs to place the ordered meal on Sertum's platform and provide the table number to be delivered to.\",\"description\":\"Sertum is a robot which can do both cleaning and serving on its own.\"},{\"projectName\":\"Cake-a-licious Website\",\"image\":\"Cake-a-licious.png\",\"largeDescription\":\"codeJunction team proudly designed a WordPress website for cake-a-licious sweets shop in Moratuwa Sri Lanka. This website contains a gallery page, a contact us page, an Instagram and Facebook plugin has been embedded in order to see the latest posts on the website.\",\"description\":\"The official website of cake-a-licious cake store.\",\"isWeb\":\"true\"},{\"projectName\":\"Ajith motors Entry System\",\"image\":\"ajithMotors.jpg\",\"largeDescription\":\"This is a Java application to manage Ajith Motors daily transactions, keep company records etc. There are primarily two interfaces for two main roles. One role is the admin and the other role is the staff. The cashier can use his/her account and according to the type of account (staff/admin) the correct interface will be displayed. Admins can view all the income, expenditure, during a time period which they put as a filter.\",\"description\":\"A data entry managment system deployed in Ajith motors car sale.\"},{\"projectName\":\"Fhix 45 Website\",\"image\":\"fhix.png\",\"largeDescription\":\"codeJunction created a Wordpress website for Fhix 45 Gym at Kollupitiya Sri Lanka. This website consisted of a home page with sections, a blog page, a gallery page, join us popup card and a contact us form. Also, this website has an Instagram and Facebook plugins embedded to view the latest Instagram and Facebook posts.\",\"description\":\"The official website of Fhix 45 gymnasium.\",\"isWeb\":\"true\"},{\"projectName\":\"codeJunction Website\",\"image\":\"codeJuctionWebsite.png\",\"description\":\"The official website of CodeJunction. (Open Source ❤️)\",\"largeDescription\":\"This is the official website 0f codeJunction. An open-source Angular based project maintained by the codeJunction crew. We welcome everyone to contribute in this project. To get started please visit our Github repository.\",\"github\":\"https://github.com/codeJunctionTeam/codeJunction-site\",\"isWeb\":\"true\"},{\"projectName\":\"Fire call\",\"image\":\"firecall.jpg\",\"description\":\"A sound wave classifying tool which analyse audio content. (Open Source ❤️)\",\"largeDescription\":\"Fire call is an open-source project which is developed using python and flask framework. This project aims to classify sound waves through analysing audio content. We welcome everyone to contribute in this project. To get started please visit our Github repository.\",\"github\":\"https://github.com/codeJunctionTeam/fire-call\"}]");
 
 /***/ }),
 
