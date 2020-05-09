@@ -1,0 +1,38 @@
+.project-modal {
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.project-modal .close {
+  outline: none !important;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.modal-footer {
+  padding-bottom: 10px;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.project-description {
+  text-align: justify;
+  margin-top: 10px;
+}
+
+.modal-body .social-media-links {
+  margin-top: 10px;
+}
+
+.social-link {
+  padding: 1%;
+}
+
+.social-link .fa {
+  color: #000000;
+  font-size: large;
+}

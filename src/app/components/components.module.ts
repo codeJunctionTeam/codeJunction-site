@@ -12,6 +12,8 @@ import { ComponentsComponent } from './components.component';
 import { NgbdModalComponent } from './modal/modal.component';
 import { NgbdModalContent } from './modal/modal.component';
 import { MemberCardComponent } from './member-card/member-card.component';
+import { OurWorkComponent } from './our-work/our-work.component';
+import { ProjectCardComponent } from './project-card/project-card.component';
 import { OurTeamComponent } from './our-team/our-team.component';
 
 @NgModule({
@@ -29,9 +31,11 @@ import { OurTeamComponent } from './our-team/our-team.component';
         NgbdModalComponent,
         NgbdModalContent,
         MemberCardComponent,
+        OurWorkComponent,
+        ProjectCardComponent,
         OurTeamComponent
     ],
     entryComponents: [NgbdModalContent],
-    exports:[ ComponentsComponent ]
+    exports: [ComponentsComponent]
 })
 export class ComponentsModule { }

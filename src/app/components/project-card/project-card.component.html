@@ -1,0 +1,22 @@
+<div class="project-modal">
+  <div class="modal-header no-border-header">
+    <h5 class="modal-title text-center">&nbsp;</h5>
+  </div>
+  <div class="modal-body">
+    <h5 class="modal-title text-center">{{data.name}}</h5>
+    <img src="assets/img/work/{{data.image}}" class="img-rounded" style="height:60%;width:60%;">
+    <div class="project-description">{{data.description}}</div>
+    <div class="row justify-content-center social-media-links">
+      <div *ngIf="data.github" class="col-xs-4 social-link">
+        <a rel="tooltip" title="Github" data-placement="bottom" href="{{data.github}}" target="_blank">
+          <i class="fa fa-github-square"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer no-border-footer">
+    <div class="project-close mx-auto">
+      <button type="button" #closebutton class="btn btn btn-outline-primary btn-round" data-dismiss="modal" (click)="close()">Close</button>
+    </div>
+  </div>
+</div>
