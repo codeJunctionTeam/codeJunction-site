@@ -1,0 +1,31 @@
+<div class="section">
+    <div class="container">
+        <div class="col-md-auto">
+            <h2 class="title">Latest Tech Blogs</h2>
+        </div>
+        <div class="blog-story">
+            <div class="row">
+                <div class="col-md-4 mb-5" *ngFor="let blog of blogs">
+                    <a href="{{blog.url}}" target="_blank">
+                        <div class="card shadow blog-story mb-4">
+                            <img src="assets/img/blogs/{{blog.image}}" class="img" alt="Blog Image">
+                            <div class="card-body">
+                                <h6>{{blog.title}}</h6>
+                            </div>
+                            <div class="card-footer">
+                                <div class="author">
+                                    <img src="assets/img/faces/{{blog.author.image}}" alt="author-photo" class="avatar">
+                                    <span>{{blog.author.name}}</span>
+                                    <div class="stats ml-auto">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        {{blog.readingTime}} min read
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

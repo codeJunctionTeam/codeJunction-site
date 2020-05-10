@@ -1,0 +1,64 @@
+.avatar {
+    width: 10px;
+    height: 10px;    
+}
+
+.blog-story img{
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-story .card {
+    cursor: pointer;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.blog-story .card-body {
+    padding-bottom: 0;
+}
+
+.blog-story .card-footer {
+    padding-top: 3px;
+    padding-right: 5px;
+}
+
+.blog-story .card-footer {
+    font-size: 0.9em;
+    padding-top: 0;
+}
+
+.card .author .avatar {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.blog-story .author span{
+    color: #6f81a4;
+    padding-left: 4px;
+    padding-top: 4px;
+}
+
+.card .author, .card .stats {
+    display: inline-flex;
+}
+
+.card .card-footer .stats .fa {
+    position: relative;
+    top: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+    font-size: 18px;
+}
+
+.card .card-footer .stats {
+    color: #6f81a4;
+}
+
+.fa-clock-o:before {
+    content: "\f017";
+    box-sizing: border-box;
+}
