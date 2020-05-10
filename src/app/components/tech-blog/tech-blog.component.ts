@@ -8,10 +8,11 @@ import blogs from '../../../assets/json/blogs.json';
 })
 export class TechBlogComponent implements OnInit {
 
+  blogs: any = blogs;
+  
   constructor() { }
 
   ngOnInit(): void {
   }
   
-  blogs: any = blogs;
 }
