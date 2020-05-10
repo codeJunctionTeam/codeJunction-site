@@ -22,7 +22,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"wrapper\">\n    <div class=\"page-header section-dark\" style=\"background-image: url('assets/img/antoine-barres.jpg')\">\n        <div class=\"filter\"></div>\n        <div class=\"content-center\">\n            <div class=\"container\">\n                <div class=\"title-brand\">\n                    <div class=\"angular-logo\">\n                        <img src=\"assets/img/logo.png\" alt=\"\">\n                    </div>\n                    <h1 class=\"presentation-title\">codeJunction</h1>\n                </div>\n\n                <h2 class=\"presentation-subtitle text-center\">Think | Search | Build</h2>\n            </div>\n        </div>\n    </div>\n    <div class=\"main\">\n        <app-our-work></app-our-work>\n        <team-members></team-members>\n        <app-our-team></app-our-team>\n    </div>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"wrapper\">\n    <div class=\"page-header section-dark\" style=\"background-image: url('assets/img/antoine-barres.jpg')\">\n        <div class=\"filter\"></div>\n        <div class=\"content-center\">\n            <div class=\"container\">\n                <div class=\"title-brand\">\n                    <div class=\"angular-logo\">\n                        <img src=\"assets/img/logo.png\" alt=\"\">\n                    </div>\n                    <h1 class=\"presentation-title\">codeJunction</h1>\n                </div>\n\n                <h2 class=\"presentation-subtitle text-center\">Think | Search | Build</h2>\n            </div>\n        </div>\n    </div>\n    <div class=\"main\">\n        <app-our-work></app-our-work>\n        <team-members></team-members>\n        <app-tech-blog></app-tech-blog>\n        <app-our-team></app-our-team>\n    </div>\n</div>\n");
 
 /***/ }),
 
@@ -101,6 +101,19 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"section\">\n    <div class=\"section section-dark\">\n        <div class=\"container\">\n            <div class=\"col-md-auto\">\n                <h2 class=\"title\">Team Members</h2>\n            </div>\n        </div>\n        <br>\n        <div class=\"container\">\n            <div class=\"row justify-content-center\">\n                <div *ngFor=\"let teamMember of teamMembers; let i = index\">\n                    <div class=\"col-sm-auto\">\n                        <div class=\"hover-profile-card\" (click)=\"showMemberCard(i)\">\n                            <img src=\"assets/img/faces/{{teamMember.image}}\"\n                                 class=\"rounded-circle img-center img-fluid shadow shadow-lg--hover imgHover\">\n                            <h5 class=\"title\" style=\"text-align: center;\">\n                                <div class=\"firstName\">{{teamMember.firstName}}</div>\n                            </h5>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/tech-blog/tech-blog.component.html":
+/*!*****************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/tech-blog/tech-blog.component.html ***!
+  \*****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"section\">\n    <div class=\"container\">\n        <div class=\"col-md-auto\">\n            <h2 class=\"title\">Latest Tech Blogs</h2>\n        </div>\n        <div class=\"blog-story\">\n            <div class=\"row\">\n                <div class=\"col-md-4 mb-5\" *ngFor=\"let blog of blogs\">\n                    <a href=\"{{blog.url}}\" target=\"_blank\">\n                        <div class=\"card shadow blog-story mb-4\">\n                            <img src=\"assets/img/blogs/{{blog.image}}\" class=\"img\" alt=\"Blog Image\">\n                            <div class=\"card-body\">\n                                <h6>{{blog.title}}</h6>\n                            </div>\n                            <div class=\"card-footer\">\n                                <div class=\"author\">\n                                    <img src=\"assets/img/faces/{{blog.author.image}}\" alt=\"author-photo\" class=\"avatar\">\n                                    <span>{{blog.author.name}}</span>\n                                    <div class=\"stats ml-auto\">\n                                        <i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i>\n                                        {{blog.readingTime}} min read\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n");
 
 /***/ }),
 
@@ -500,6 +513,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _our_work_our_work_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./our-work/our-work.component */ "./src/app/components/our-work/our-work.component.ts");
 /* harmony import */ var _project_card_project_card_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./project-card/project-card.component */ "./src/app/components/project-card/project-card.component.ts");
 /* harmony import */ var _our_team_our_team_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./our-team/our-team.component */ "./src/app/components/our-team/our-team.component.ts");
+/* harmony import */ var _tech_blog_tech_blog_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./tech-blog/tech-blog.component */ "./src/app/components/tech-blog/tech-blog.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -509,6 +523,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
   return (mod && mod.__esModule) ? mod : { "default": mod };
 };
+
 
 
 
@@ -545,7 +560,8 @@ var ComponentsModule = /** @class */ (function () {
                 _member_card_member_card_component__WEBPACK_IMPORTED_MODULE_10__["MemberCardComponent"],
                 _our_work_our_work_component__WEBPACK_IMPORTED_MODULE_11__["OurWorkComponent"],
                 _project_card_project_card_component__WEBPACK_IMPORTED_MODULE_12__["ProjectCardComponent"],
-                _our_team_our_team_component__WEBPACK_IMPORTED_MODULE_13__["OurTeamComponent"]
+                _our_team_our_team_component__WEBPACK_IMPORTED_MODULE_13__["OurTeamComponent"],
+                _tech_blog_tech_blog_component__WEBPACK_IMPORTED_MODULE_14__["TechBlogComponent"]
             ],
             entryComponents: [_modal_modal_component__WEBPACK_IMPORTED_MODULE_9__["NgbdModalContent"]],
             exports: [_components_component__WEBPACK_IMPORTED_MODULE_8__["ComponentsComponent"]]
@@ -1044,6 +1060,67 @@ var TeamSectionComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/tech-blog/tech-blog.component.css":
+/*!**************************************************************!*\
+  !*** ./src/app/components/tech-blog/tech-blog.component.css ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".avatar {\n    width: 10px;\n    height: 10px;    \n}\n\n.blog-story img{\n    height: 200px;\n    -o-object-fit: cover;\n       object-fit: cover;\n}\n\n.blog-story .card {\n    cursor: pointer;\n    height: 100%;\n    margin-bottom: 10px;\n}\n\n.blog-story .card-body {\n    padding-bottom: 0;\n}\n\n.blog-story .card-footer {\n    padding-top: 3px;\n    padding-right: 5px;\n}\n\n.blog-story .card-footer {\n    font-size: 0.9em;\n    padding-top: 0;\n}\n\n.card .author .avatar {\n    width: 30px;\n    height: 30px;\n    overflow: hidden;\n    border-radius: 50%;\n    margin-right: 5px;\n}\n\n.blog-story .author span{\n    color: #6f81a4;\n    padding-left: 4px;\n    padding-top: 4px;\n}\n\n.card .author, .card .stats {\n    display: inline-flex;\n}\n\n.card .card-footer .stats .fa {\n    position: relative;\n    top: 3px;\n    margin-right: 3px;\n    margin-left: 3px;\n    font-size: 18px;\n}\n\n.card .card-footer .stats {\n    color: #6f81a4;\n}\n\n.fa-clock-o:before {\n    content: \"\\f017\";\n    box-sizing: border-box;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy90ZWNoLWJsb2cvdGVjaC1ibG9nLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxXQUFXO0lBQ1gsWUFBWTtBQUNoQjs7QUFFQTtJQUNJLGFBQWE7SUFDYixvQkFBaUI7T0FBakIsaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksZUFBZTtJQUNmLFlBQVk7SUFDWixtQkFBbUI7QUFDdkI7O0FBRUE7SUFDSSxpQkFBaUI7QUFDckI7O0FBRUE7SUFDSSxnQkFBZ0I7SUFDaEIsa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGNBQWM7QUFDbEI7O0FBRUE7SUFDSSxXQUFXO0lBQ1gsWUFBWTtJQUNaLGdCQUFnQjtJQUNoQixrQkFBa0I7SUFDbEIsaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksY0FBYztJQUNkLGlCQUFpQjtJQUNqQixnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxvQkFBb0I7QUFDeEI7O0FBRUE7SUFDSSxrQkFBa0I7SUFDbEIsUUFBUTtJQUNSLGlCQUFpQjtJQUNqQixnQkFBZ0I7SUFDaEIsZUFBZTtBQUNuQjs7QUFFQTtJQUNJLGNBQWM7QUFDbEI7O0FBRUE7SUFDSSxnQkFBZ0I7SUFDaEIsc0JBQXNCO0FBQzFCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy90ZWNoLWJsb2cvdGVjaC1ibG9nLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYXZhdGFyIHtcbiAgICB3aWR0aDogMTBweDtcbiAgICBoZWlnaHQ6IDEwcHg7ICAgIFxufVxuXG4uYmxvZy1zdG9yeSBpbWd7XG4gICAgaGVpZ2h0OiAyMDBweDtcbiAgICBvYmplY3QtZml0OiBjb3Zlcjtcbn1cblxuLmJsb2ctc3RvcnkgLmNhcmQge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBoZWlnaHQ6IDEwMCU7XG4gICAgbWFyZ2luLWJvdHRvbTogMTBweDtcbn1cblxuLmJsb2ctc3RvcnkgLmNhcmQtYm9keSB7XG4gICAgcGFkZGluZy1ib3R0b206IDA7XG59XG5cbi5ibG9nLXN0b3J5IC5jYXJkLWZvb3RlciB7XG4gICAgcGFkZGluZy10b3A6IDNweDtcbiAgICBwYWRkaW5nLXJpZ2h0OiA1cHg7XG59XG5cbi5ibG9nLXN0b3J5IC5jYXJkLWZvb3RlciB7XG4gICAgZm9udC1zaXplOiAwLjllbTtcbiAgICBwYWRkaW5nLXRvcDogMDtcbn1cblxuLmNhcmQgLmF1dGhvciAuYXZhdGFyIHtcbiAgICB3aWR0aDogMzBweDtcbiAgICBoZWlnaHQ6IDMwcHg7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgICBib3JkZXItcmFkaXVzOiA1MCU7XG4gICAgbWFyZ2luLXJpZ2h0OiA1cHg7XG59XG5cbi5ibG9nLXN0b3J5IC5hdXRob3Igc3BhbntcbiAgICBjb2xvcjogIzZmODFhNDtcbiAgICBwYWRkaW5nLWxlZnQ6IDRweDtcbiAgICBwYWRkaW5nLXRvcDogNHB4O1xufVxuXG4uY2FyZCAuYXV0aG9yLCAuY2FyZCAuc3RhdHMge1xuICAgIGRpc3BsYXk6IGlubGluZS1mbGV4O1xufVxuXG4uY2FyZCAuY2FyZC1mb290ZXIgLnN0YXRzIC5mYSB7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIHRvcDogM3B4O1xuICAgIG1hcmdpbi1yaWdodDogM3B4O1xuICAgIG1hcmdpbi1sZWZ0OiAzcHg7XG4gICAgZm9udC1zaXplOiAxOHB4O1xufVxuXG4uY2FyZCAuY2FyZC1mb290ZXIgLnN0YXRzIHtcbiAgICBjb2xvcjogIzZmODFhNDtcbn1cblxuLmZhLWNsb2NrLW86YmVmb3JlIHtcbiAgICBjb250ZW50OiBcIlxcZjAxN1wiO1xuICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG59XG4iXX0= */");
+
+/***/ }),
+
+/***/ "./src/app/components/tech-blog/tech-blog.component.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/components/tech-blog/tech-blog.component.ts ***!
+  \*************************************************************/
+/*! exports provided: TechBlogComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TechBlogComponent", function() { return TechBlogComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
+/* harmony import */ var _assets_json_blogs_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../assets/json/blogs.json */ "./src/assets/json/blogs.json");
+var _assets_json_blogs_json__WEBPACK_IMPORTED_MODULE_1___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../../assets/json/blogs.json */ "./src/assets/json/blogs.json", 1);
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
+  return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+
+
+var TechBlogComponent = /** @class */ (function () {
+    function TechBlogComponent() {
+        this.blogs = _assets_json_blogs_json__WEBPACK_IMPORTED_MODULE_1__;
+    }
+    TechBlogComponent.prototype.ngOnInit = function () {
+    };
+    TechBlogComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-tech-blog',
+            template: __importDefault(__webpack_require__(/*! raw-loader!./tech-blog.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/tech-blog/tech-blog.component.html")).default,
+            styles: [__importDefault(__webpack_require__(/*! ./tech-blog.component.css */ "./src/app/components/tech-blog/tech-blog.component.css")).default]
+        }),
+        __metadata("design:paramtypes", [])
+    ], TechBlogComponent);
+    return TechBlogComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/shared/footer/footer.component.scss":
 /*!*****************************************************!*\
   !*** ./src/app/shared/footer/footer.component.scss ***!
@@ -1221,6 +1298,17 @@ var NavbarComponent = /** @class */ (function () {
 }());
 
 
+
+/***/ }),
+
+/***/ "./src/assets/json/blogs.json":
+/*!************************************!*\
+  !*** ./src/assets/json/blogs.json ***!
+  \************************************/
+/*! exports provided: 0, 1, 2, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"title\":\"An Introduction to Cloud Services\",\"url\":\"https://medium.com/@rajitha1998/an-introduction-to-cloud-services-67de8c2a3247\",\"image\":\"cloudService.jpeg\",\"readingTime\":\"5\",\"author\":{\"name\":\"Rajitha Warusavitarana\",\"image\":\"rajitha.jpg\"}},{\"title\":\"Gamers around the world can help fight COVID-19 (Coronavirus)\",\"url\":\"https://medium.com/@hasal98fernando/gamers-around-the-world-can-help-fight-covid-19-corona-virus-28f29bb84095\",\"image\":\"helpCovid.jpeg\",\"readingTime\":\"2\",\"author\":{\"name\":\"Hasal Fernando\",\"image\":\"hasal.jpg\"}},{\"title\":\"Dive into Docker basics\",\"url\":\"https://medium.com/@janethavishka/dive-into-docker-basics-f2c01640a6fc\",\"image\":\"basicDocker.png\",\"readingTime\":\"4\",\"author\":{\"name\":\"Janeth Fernando\",\"image\":\"janeth.jpg\"}}]");
 
 /***/ }),
 
