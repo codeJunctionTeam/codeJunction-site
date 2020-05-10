@@ -15,6 +15,7 @@ import { MemberCardComponent } from './member-card/member-card.component';
 import { OurWorkComponent } from './our-work/our-work.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { OurTeamComponent } from './our-team/our-team.component';
+import { TechBlogComponent } from './tech-blog/tech-blog.component';
 
 @NgModule({
     imports: [
@@ -33,7 +34,8 @@ import { OurTeamComponent } from './our-team/our-team.component';
         MemberCardComponent,
         OurWorkComponent,
         ProjectCardComponent,
-        OurTeamComponent
+        OurTeamComponent,
+        TechBlogComponent
     ],
     entryComponents: [NgbdModalContent],
     exports: [ComponentsComponent]
