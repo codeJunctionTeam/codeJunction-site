@@ -12,12 +12,6 @@
                             <i *ngIf="project.isWeb" class="fa fa-globe" aria-hidden="true"
                                 style="padding-left:10px;"></i> </h5>
                         <p class="card-text" style="text-align: justify; font-size: 12px;">{{project.description}}</p>
-                        <button class="btn btn-default" (click)="showProjectCard({
-                                image:project.image,
-                                description: project.largeDescription,
-                                name: project.projectName,
-                                github: project.github|| null})">
-                            See more</button>
                     </div>
                 </div>
                 <button type="button" class="slider_button btn btn-danger btn-just-icon" (click)="foward()"><i
