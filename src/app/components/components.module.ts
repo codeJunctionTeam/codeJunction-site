@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { NouisliderModule } from 'ng2-nouislider';
 import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
 import { RouterModule } from '@angular/router';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 
 import { TeamSectionComponent } from './teamSection/teamSection.component';
@@ -23,6 +24,7 @@ import { TechBlogComponent } from './tech-blog/tech-blog.component';
         FormsModule,
         NgbModule,
         NouisliderModule,
+        SlickCarouselModule,
         RouterModule,
         JwBootstrapSwitchNg2Module
     ],

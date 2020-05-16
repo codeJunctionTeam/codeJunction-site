@@ -11,19 +11,11 @@ import { ProjectCardComponent } from '../project-card/project-card.component';
 })
 export class OurWorkComponent implements OnInit {
 
-  private displayCount;
-  public listedProjects;
-  private clicker = 0;
+  projects: any = projects;
 
   constructor(private modalService: NgbModal) { }
 
-  @HostListener('window:resize', ['$event'])
-  onResize(event) {
-    this.adjustScreen(event.target.innerWidth);
-  }
-
   ngOnInit() {
-    this.adjustScreen(window.innerWidth);
   }
 
   showProjectCard(data) {
@@ -31,31 +23,16 @@ export class OurWorkComponent implements OnInit {
     card.open(data);
   }
 
-  foward() {
-    if (this.clicker < projects.length - this.displayCount) {
-      this.clicker++;
-      this.listedProjects = projects.slice(0 + this.clicker, this.displayCount + this.clicker);
-    }
-  }
+  slideConfig = {
+    "slidesToShow": 3,
+    "slidesToScroll": 1,
+    "nextArrow": "<div class='btn btn-danger btn-just-icon fa fa-angle-right'></div>",
+    "prevArrow": "<div class='btn btn-danger btn-just-icon fa fa-angle-left'></div>",
+    "autoplay": true,
+    "autoplaySpeed": 2000,
+    "adaptiveHeight": true,
+    "dots": true,
+    "infinite": true
+  };
 
-  backward() {
-    if (this.clicker > 0) {
-      this.clicker--;
-      this.listedProjects = projects.slice(0 + this.clicker, this.displayCount + this.clicker);
-    }
-  }
-
-  adjustScreen(width) {
-    if (width <= 767) {
-      this.displayCount = 1;
-    } else if (width < 770) {
-      this.displayCount = 2;
-    }
-    else if (width < 1300) {
-      this.displayCount = 2;
-    } else {
-      this.displayCount = 3;
-    }
-    this.listedProjects = projects.slice(0, this.displayCount);
-  }
 }
