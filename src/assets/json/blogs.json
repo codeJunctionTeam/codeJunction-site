@@ -28,5 +28,15 @@
         "name": "Janeth Fernando",
         "image": "janeth.jpg"
       }
+    },
+    {
+      "title": "Use Google Drive to Store PDFs with Zotero in 3 Steps",
+      "url": "https://medium.com/@hasal98fernando/use-google-drive-to-store-pdfs-with-zotero-in-3-steps-c36135d53f86",
+      "image": "GDrive_Zotero.png",
+      "readingTime": "3",
+      "author": {
+        "name": "Hasal Fernando",
+        "image": "hasal.jpg"
+      }
     }
   ]
