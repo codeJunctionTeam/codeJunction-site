@@ -1,28 +1,23 @@
 <div class="section">
     <div class="container">
-        <h2>Our Work</h2>
-        <div class="work-section">
-            <div class="row justify-content-center">
-                <button type="button" class="slider_button btn btn-danger btn-just-icon" (click)="backward()"><i
-                        class="fa fa-angle-left"></i></button>
-                <div class="project card" *ngFor="let project of listedProjects">
-                    <img class="card-img-top" src="assets/img/work/{{project.image}}" alt="Card image cap">
+        <h2 class="title">Our Work</h2>
+        <ngx-slick-carousel class="carousel project" #slickModal="slick-carousel" [config]="slideConfig">
+            <div ngxSlickItem *ngFor="let project of projects" class="slide card">
+                <a  (click)="showProjectCard({
+                                        image:project.image,
+                                        description: project.largeDescription,
+                                        name: project.projectName,
+                                        github: project.github|| null})">
+                    <img class="card-img-top" src="assets/img/work/{{project.image}}" alt="Project Image">
                     <div class="card-body">
-                        <h5 class="card-title"><b>{{project.projectName}}</b>
-                            <i *ngIf="project.isWeb" class="fa fa-globe" aria-hidden="true"
-                                style="padding-left:10px;"></i> </h5>
-                        <p class="card-text" style="text-align: justify; font-size: 12px;">{{project.description}}</p>
-                        <button class="btn btn-default" (click)="showProjectCard({
-                                image:project.image,
-                                description: project.largeDescription,
-                                name: project.projectName,
-                                github: project.github|| null})">
-                            See more</button>
+                        <h5 class="card-title"><b>{{project.projectName}}
+                                <i *ngIf="project.isWeb" class="fa fa-globe" aria-hidden="true"
+                                    style="padding-left:10px;"></i></b>
+                        </h5>
+                        <p class="card-text">{{project.description}}</p>
                     </div>
-                </div>
-                <button type="button" class="slider_button btn btn-danger btn-just-icon" (click)="foward()"><i
-                        class="fa fa-angle-right"></i></button>
+                </a>
             </div>
-        </div>
+        </ngx-slick-carousel>
     </div>
 </div>
