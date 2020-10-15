@@ -1305,10 +1305,10 @@ var NavbarComponent = /** @class */ (function () {
 /*!************************************!*\
   !*** ./src/assets/json/blogs.json ***!
   \************************************/
-/*! exports provided: 0, 1, 2, default */
+/*! exports provided: 0, 1, 2, 3, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"title\":\"An Introduction to Cloud Services\",\"url\":\"https://medium.com/@rajitha1998/an-introduction-to-cloud-services-67de8c2a3247\",\"image\":\"cloudService.jpeg\",\"readingTime\":\"5\",\"author\":{\"name\":\"Rajitha Warusavitarana\",\"image\":\"rajitha.jpg\"}},{\"title\":\"Gamers around the world can help fight COVID-19 (Coronavirus)\",\"url\":\"https://medium.com/@hasal98fernando/gamers-around-the-world-can-help-fight-covid-19-corona-virus-28f29bb84095\",\"image\":\"helpCovid.jpeg\",\"readingTime\":\"2\",\"author\":{\"name\":\"Hasal Fernando\",\"image\":\"hasal.jpg\"}},{\"title\":\"Dive into Docker basics\",\"url\":\"https://medium.com/@janethavishka/dive-into-docker-basics-f2c01640a6fc\",\"image\":\"basicDocker.png\",\"readingTime\":\"4\",\"author\":{\"name\":\"Janeth Fernando\",\"image\":\"janeth.jpg\"}}]");
+module.exports = JSON.parse("[{\"title\":\"An Introduction to Cloud Services\",\"url\":\"https://medium.com/@rajitha1998/an-introduction-to-cloud-services-67de8c2a3247\",\"image\":\"cloudService.jpeg\",\"readingTime\":\"5\",\"author\":{\"name\":\"Rajitha Warusavitarana\",\"image\":\"rajitha.jpg\"}},{\"title\":\"Gamers around the world can help fight COVID-19 (Coronavirus)\",\"url\":\"https://medium.com/@hasal98fernando/gamers-around-the-world-can-help-fight-covid-19-corona-virus-28f29bb84095\",\"image\":\"helpCovid.jpeg\",\"readingTime\":\"2\",\"author\":{\"name\":\"Hasal Fernando\",\"image\":\"hasal.jpg\"}},{\"title\":\"Dive into Docker basics\",\"url\":\"https://medium.com/@janethavishka/dive-into-docker-basics-f2c01640a6fc\",\"image\":\"basicDocker.png\",\"readingTime\":\"4\",\"author\":{\"name\":\"Janeth Fernando\",\"image\":\"janeth.jpg\"}},{\"title\":\"Use Google Drive to Store PDFs with Zotero in 3 Steps\",\"url\":\"https://medium.com/@hasal98fernando/use-google-drive-to-store-pdfs-with-zotero-in-3-steps-c36135d53f86\",\"image\":\"GDrive_Zotero.png\",\"readingTime\":\"3\",\"author\":{\"name\":\"Hasal Fernando\",\"image\":\"hasal.jpg\"}}]");
 
 /***/ }),
 
